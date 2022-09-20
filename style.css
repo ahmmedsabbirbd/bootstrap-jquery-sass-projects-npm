@@ -769,6 +769,9 @@ MAIN STYLES
   color: rgb(122, 122, 122) !important;
   background-color: #F5F5F5 !important;
 }
+.main-content .comments-area .typing-area textarea[spellcheck=false] {
+  height: 89px;
+}
 .main-content .comments-area .typing-area textarea::-webkit-input-placeholder {
   color: rgb(122, 122, 122);
 }

@@ -531,6 +531,10 @@ MAIN STYLES
 				padding: 6px 10px !important;
 				color: rgb(122, 122, 122) !important;
 				background-color: #F5F5F5 !important;
+
+				&[spellcheck="false"] {
+					height: 89px;
+				}
 			}
 
 			textarea::-webkit-input-placeholder {
