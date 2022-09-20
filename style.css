@@ -699,6 +699,33 @@ MAIN STYLES
   padding: 30px 0;
 }
 
+.main-content__bottom {
+  margin-top: 20px;
+}
+.main-content__bottom .title {
+  margin-bottom: 20px;
+}
+.main-content__bottom .review {
+  margin-bottom: 20px;
+}
+.main-content__bottom .review__wrapper {
+  gap: 15px;
+}
+.main-content__bottom .review ul {
+  margin: -5px;
+}
+.main-content__bottom .review ul li {
+  margin: 5px;
+}
+.main-content__bottom .review ul li a {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.main-content__bottom .btn {
+  margin-bottom: 30px;
+}
+
 .common-video {
   width: 100%;
   height: 530px;
