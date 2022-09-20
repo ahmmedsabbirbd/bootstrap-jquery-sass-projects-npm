@@ -21,6 +21,10 @@ MEDIA QUERIES
             height: 180px;
         }
     }
+
+    .search-form__wrapper {
+        max-width: 100%;
+    }
 }/* 1199 */
 
 @media only screen and (max-width: 991px) {
@@ -81,6 +85,10 @@ MEDIA QUERIES
     //     margin-top: 30px;
     // }
 
+    .common-video { 
+        height: 400px; 
+    }
+
      
 
 }/* 767 */
@@ -118,6 +126,10 @@ MEDIA QUERIES
                 }
             }
         }
+    }
+
+    .common-video { 
+        height: 350px; 
     }
     
 }/* 575 */
