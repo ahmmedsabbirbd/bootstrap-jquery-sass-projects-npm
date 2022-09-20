@@ -532,6 +532,22 @@ MAIN STYLES
 				color: rgb(122, 122, 122) !important;
 				background-color: #F5F5F5 !important;
 			}
+
+			textarea::-webkit-input-placeholder {
+				color: rgb(122, 122, 122);
+			}
+
+			textarea:-moz-placeholder { /* Firefox 18- */
+				color: rgb(122, 122, 122);  
+			}
+
+			textarea::-moz-placeholder {  /* Firefox 19+ */
+				color: rgb(122, 122, 122);  
+			}
+
+			textarea:-ms-input-placeholder {
+				color: rgb(122, 122, 122);  
+			}
 		}
 
 		.single-comment {

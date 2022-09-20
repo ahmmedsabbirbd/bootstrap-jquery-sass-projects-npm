@@ -769,6 +769,20 @@ MAIN STYLES
   color: rgb(122, 122, 122) !important;
   background-color: #F5F5F5 !important;
 }
+.main-content .comments-area .typing-area textarea::-webkit-input-placeholder {
+  color: rgb(122, 122, 122);
+}
+.main-content .comments-area .typing-area textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgb(122, 122, 122);
+}
+.main-content .comments-area .typing-area textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgb(122, 122, 122);
+}
+.main-content .comments-area .typing-area textarea:-ms-input-placeholder {
+  color: rgb(122, 122, 122);
+}
 .main-content .comments-area .single-comment {
   gap: 15px;
   margin-bottom: 40px;
