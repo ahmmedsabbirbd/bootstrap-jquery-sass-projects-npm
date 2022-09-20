@@ -735,6 +735,40 @@ MAIN STYLES
   font-size: 18px;
   line-height: 17px;
 }
+.main-content .comments-area .typing-area {
+  gap: 25px;
+  margin-bottom: 30px;
+}
+.main-content .comments-area .typing-area .media {
+  width: 40px;
+  height: 40px;
+  color: #FFF;
+  font-weight: 600;
+  overflow: hidden;
+  text-align: center;
+  text-align: center;
+  line-height: 40px;
+  background-color: #BDBDBD;
+  min-width: 40px !important;
+  border-radius: 500px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+}
+.main-content .comments-area .typing-area .media i {
+  color: #FFF;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-content .comments-area .typing-area textarea {
+  height: 40px;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 6px 10px !important;
+  color: rgb(122, 122, 122) !important;
+  background-color: #F5F5F5 !important;
+}
 .main-content .comments-area .single-comment {
   gap: 15px;
   margin-bottom: 40px;
