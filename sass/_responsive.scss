@@ -1,0 +1,111 @@
+/***********************************
+MEDIA QUERIES
+***********************************/
+@media only screen and (max-width: 991px) {
+
+    h1, .h1 { font-size: 48px; line-height: 60px; }
+    h2, .h2 { font-size: 40px; line-height: 52px; }
+
+
+    // .sidebar {
+    //     margin-top: 40px;
+
+    //     .widget {
+
+    //         &:last-child {
+    //             margin-bottom: 0;
+    //         }
+    //     }
+    // }
+ 
+
+}/* 991 */
+
+@media only screen and (max-width: 899px) { 
+
+    .container-fluid {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header .navbar .container-fluid {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    h1, .h1 { font-size: 40px; line-height: 52px; }
+    h2, .h2 { font-size: 36px; line-height: 44px; }
+    h3, .h3 { font-size: 30px; line-height: 36px; }
+    h4, .h4 { font-size: 24px; line-height: 32px; }
+    h5, .h5 { font-size: 20px; line-height: 30px; }
+ 
+    /***********************************
+    HEADER STYLES
+    ***********************************/
+   .header .navbar .navbar-collapse .navbar-nav {
+        margin-left: -9px;
+        margin-right: -9px;
+
+        > li {
+            padding-left: 9px;
+            padding-right: 9px;
+        }
+   }
+
+    // .sidebar {
+    //     margin-top: 30px;
+    // }
+
+     
+
+}/* 767 */
+
+@media only screen and (max-width: 575px) {
+
+    body, .body { font-size: 16px; line-height: 24px; }
+
+    h1, .h1 { font-size: 36px; line-height: 44px; }
+    h2, .h2 { font-size: 30px; line-height: 36px; }
+    h3, .h3 { font-size: 28px; line-height: 34px; }
+    h4, .h4 { font-size: 20px; line-height: 30px; }
+    h5, .h5 { font-size: 18px; line-height: 30px; }
+    h6, .h6 { font-size: 16px; line-height: 24px; }
+
+
+    /***********************************
+    HEADER STYLES
+    ***********************************/
+    .header {
+
+        .navbar {
+
+            .navbar-collapse {
+
+                .navbar-nav {
+
+                    li {
+
+                        &:not(.mobile-navbar-toggler) {
+                            display: none;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    
+}/* 575 */
+
+@media only screen and (max-width: 480px) {
+
+    h1, .h1 { font-size: 34px; line-height: 40px; }
+
+    p {
+        margin: 0 0 20px;
+    }
+
+}/* 480 */
