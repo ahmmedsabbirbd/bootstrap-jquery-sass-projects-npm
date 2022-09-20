@@ -509,7 +509,7 @@ select:focus, textarea:hover, textarea:focus {
 /***********************************
 HEADER STYLES
 ***********************************/
-.scroll-down .header {
+.scroll-down .header:not(.stiky) {
   -webkit-transform: translate3d(0, -100%, 0);
   transform: translate3d(0, -100%, 0);
 }
@@ -927,7 +927,7 @@ MEDIA QUERIES
 ***********************************/
 @media only screen and (max-width: 1199px) {
   .sidebar {
-    padding-top: 60px;
+    padding-top: 40px;
   }
   .sidebar .mb-30 {
     margin-bottom: -30px;

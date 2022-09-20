@@ -220,7 +220,7 @@ select, textarea {
 /***********************************
 HEADER STYLES
 ***********************************/
-.scroll-down .header {
+.scroll-down .header:not(.stiky) {
     @include transform(translate3d(0, -100%, 0));
 }
 
