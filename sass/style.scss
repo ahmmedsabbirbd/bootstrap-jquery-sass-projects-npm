@@ -93,7 +93,7 @@ select, textarea {
 	line-height: 26px !important;
 	border-radius: 6px !important;
 	padding: 10px 15px !important;
-	background: #F7F9FF !important;
+	background: $white !important;
 	border: 1px solid #DBDFE8 !important;
 	@include appearance;
 	@include transition(all 0.3s ease);
@@ -220,7 +220,7 @@ select, textarea {
 /***********************************
 HEADER STYLES
 ***********************************/
-.scroll-down .header:not(.stiky) {
+.scroll-down .header:not(.sticky) {
     @include transform(translate3d(0, -100%, 0));
 }
 
@@ -452,7 +452,31 @@ MAIN STYLES
 
 .search-form {
 
+	&__wrapper {
+		max-width: 53%;
+	}
+
+	.category {
+		position: relative;
+		
+		&:after { 
+			top: 12px;
+			right: 13px;
+			content: "";
+			position: absolute;
+			font-family: "entreviable";
+		}
+
+		select {
+			max-width: 155px;
+			border: 0 !important;
+			background-color: transparent !important;
+		}
+
+	}
+
 	.form-group {
+		width: 100%;
 		margin-bottom: 0;
 		position: relative;
 

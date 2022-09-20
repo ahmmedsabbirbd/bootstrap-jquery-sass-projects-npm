@@ -241,7 +241,7 @@ select, textarea {
   line-height: 26px !important;
   border-radius: 6px !important;
   padding: 10px 15px !important;
-  background: #F7F9FF !important;
+  background: #FFF !important;
   border: 1px solid #DBDFE8 !important;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -509,7 +509,7 @@ select:focus, textarea:hover, textarea:focus {
 /***********************************
 HEADER STYLES
 ***********************************/
-.scroll-down .header:not(.stiky) {
+.scroll-down .header:not(.sticky) {
   -webkit-transform: translate3d(0, -100%, 0);
   transform: translate3d(0, -100%, 0);
 }
@@ -699,7 +699,26 @@ MAIN STYLES
   padding: 30px 0;
 }
 
+.search-form__wrapper {
+  max-width: 53%;
+}
+.search-form .category {
+  position: relative;
+}
+.search-form .category:after {
+  top: 12px;
+  right: 13px;
+  content: "\f107";
+  position: absolute;
+  font-family: "entreviable";
+}
+.search-form .category select {
+  max-width: 155px;
+  border: 0 !important;
+  background-color: transparent !important;
+}
 .search-form .form-group {
+  width: 100%;
   margin-bottom: 0;
   position: relative;
 }
