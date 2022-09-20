@@ -823,15 +823,17 @@ MAIN STYLES
   position: relative;
 }
 .search-form .category:after {
-  right: 0;
   top: 12px;
+  right: 5px;
   content: "\f107";
+  z-index: -1;
   position: absolute;
   font-family: "entreviable";
 }
 .search-form .category select {
   max-width: 140px;
   border: 0 !important;
+  padding-right: 0 !important;
   background-color: transparent !important;
 }
 .search-form .form-group {

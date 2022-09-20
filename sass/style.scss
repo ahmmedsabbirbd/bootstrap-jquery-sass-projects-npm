@@ -600,9 +600,10 @@ MAIN STYLES
 		position: relative;
 		
 		&:after { 
-			right: 0;
 			top: 12px;
+			right: 5px;
 			content: "";
+			z-index: -1;
 			position: absolute;
 			font-family: "entreviable";
 		}
@@ -610,6 +611,7 @@ MAIN STYLES
 		select {
 			max-width: 140px;
 			border: 0 !important;
+			padding-right: 0 !important;
 			background-color: transparent !important;
 		}
 
