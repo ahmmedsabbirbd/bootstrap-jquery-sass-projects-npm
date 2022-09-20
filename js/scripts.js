@@ -244,5 +244,7 @@
 	
 	    }, 'xml');
 	});
+
+	jQuery("#common-video").YTPlayer();
     
 }(jQuery));

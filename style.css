@@ -699,6 +699,21 @@ MAIN STYLES
   padding: 30px 0;
 }
 
+.common-video {
+  width: 100%;
+  height: 530px;
+  margin-top: 24px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-attachment: inherit !important;
+}
+.common-video .mb_YTPBar {
+  left: 2.5%;
+  right: 2.5%;
+  bottom: 10px;
+  max-width: 95%;
+}
+
 .search-form__wrapper {
   max-width: 53%;
 }
