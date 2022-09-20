@@ -732,7 +732,7 @@ MAIN STYLES
 
 .latest-post {
   gap: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 .latest-post .media {
   height: 114px;
@@ -925,6 +925,27 @@ FOOTER STYLES
 /***********************************
 MEDIA QUERIES
 ***********************************/
+@media only screen and (max-width: 1199px) {
+  .sidebar {
+    padding-top: 60px;
+  }
+  .sidebar .mb-30 {
+    margin-bottom: -30px;
+  }
+
+  .latest-post {
+    margin-bottom: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .latest-post .media {
+    max-width: 100%;
+    height: 180px;
+  }
+}
+/* 1199 */
 @media only screen and (max-width: 991px) {
   h1, .h1 {
     font-size: 48px;
@@ -1039,6 +1060,13 @@ MEDIA QUERIES
 
   p {
     margin: 0 0 20px;
+  }
+
+  .sidebar .col-xl-12.col-lg-4.col-6 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
   }
 }
 /* 480 */
