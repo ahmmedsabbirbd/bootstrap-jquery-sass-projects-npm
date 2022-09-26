@@ -1,22 +1,103 @@
 /** footer-area  **/
-.footer-area{
-    overflow:hidden;
-    .copy-right-info{
-        .copy-right{
-            p{
-                color: #bdbdbd;
+.footer-area {
+
+    &.pt-115 {
+
+        @media screen and (max-width: 991px) {
+            padding-top: 100px;
+        }
+
+        @media screen and (max-width: 575px) { 
+            padding-top: 90px;
+        }
+    }
+
+    &__content {
+        max-width: 787px;
+    }
+
+    .description {
+
+        p {
+            color: #858585;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
+
+.footer-menu {
+
+    ul {
+        gap: 48px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+
+            a {
+                display: block;
+                font-size: 14px;
+                font-weight: 500;
+                color: #555555;
+                font-family: $but;
+                line-height: 16px;
+                
+                &:hover, &:focus {
+                    color: $black;
+                    // font-weight: 700;
+                    text-decoration: underline;
+                }
             }
         }
     }
 }
 
-.social-profile a {
-	width: 34px;
-	height: 34px;
-	line-height: 34px;
-	border: 1px solid #fff;
-	border-radius: 50%;
-	display: inline-block;
-	text-align: center;
-	color: #bdbdbd;
+.social-profile { 
+    gap: 24px;
+    z-index: 1;
+    padding: 10.5px 0;
+
+    @media screen and (max-width: 575px) { 
+        padding: 5px 0;
+    }
+
+    &:after, &:before {
+        top: 0;
+        content: "";
+        z-index: -1;
+        height: 100%;
+        width: 99999px;
+        position: absolute;
+        background-color: #2C4325;
+    }
+
+    &:before {
+        left: -100058px;
+        border-radius: 0px 100px 0px 0px;
+        
+        @media screen and (max-width: 480px) { 
+            left: -100035px;
+        }
+    }
+
+    &:after {
+        right: -100058px;
+        border-radius: 100px 0px 0px 0px;
+
+        @media screen and (max-width: 480px) { 
+            right: -100035px;
+        }
+    }
+
+    a { 
+        color: $black; 
+        font-size: 15px;
+
+        &:hover, &:focus {
+            color: #2C4325;
+            @include transform(translate(0, -5px));
+        }
+    }
 }

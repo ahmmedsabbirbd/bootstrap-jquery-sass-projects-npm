@@ -279,6 +279,9 @@
 .pt-15 {
 	padding-top: 15px;
 }
+.pt-16 {
+	padding-top: 16px;
+}
 .pt-20 {
 	padding-top: 20px;
 }
@@ -424,9 +427,6 @@
 }
 .pb-15 {
 	padding-bottom: 15px;
-}
-.pb-16 {
-	padding-bottom: 16px;
 }
 .pb-20 {
 	padding-bottom: 20px;
@@ -832,18 +832,12 @@
 	padding-right: 200px;
 }
 
+
+
 /** padding top & bottom **/
-.py-6 {
-	padding-top: 6px;
-	padding-bottom: 6px;
-}
 .py-10 {
 	padding-top: 10px;
 	padding-bottom: 10px;
-}
-.py-14 {
-	padding-top: 14px;
-	padding-bottom: 14px;
 }
 .py-15 {
 	padding-top: 15px;
