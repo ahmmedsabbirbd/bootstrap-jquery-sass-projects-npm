@@ -1,16 +1,20 @@
 /** home page **/
-.coffee-heaven {
+.py-110 {
 
-    &.py-110 {
-
-        @media screen and (max-width: 991px) { 
-            padding: 80px 0;
-        }
-        
-        @media screen and (max-width: 767px) { 
-            padding: 60px 0;
-        }
+    @media screen and (max-width: 991px) { 
+        padding: 80px 0;
     }
+    
+    @media screen and (max-width: 767px) { 
+        padding: 60px 0;
+    }
+}
+
+.visit-reco {
+    background-color: #2C4325;
+}
+
+.coffee-heaven {
     
     .row {
         
@@ -65,6 +69,50 @@
     }
 }
 
-.visit-reco {
-    background-color: #2C4325;
+#map {
+    width: 100%;
+    height: 646px;
+
+    .gmnoprint {
+        display: none;
+    }
+}
+
+.about-us {
+
+    &__media {
+        margin-bottom: 172px;
+
+        .image {
+            max-width: 438px;
+
+            &.one {
+                width: 346px;
+                right: -192px;
+                bottom: -192px;
+                height: 346px;
+                position: absolute;
+                border: 20px solid #F7F4F0;
+                @include border-radius(500px);
+            }
+        }
+    }
+
+    &__experience {
+        width: 288px;
+        height: 288px;
+        border: 1px solid #CCCCCC;
+        @include border-radius(500px);
+
+        .number {
+            color: $primary;
+            font-size: 105px;
+            line-height: 77px;
+        }
+
+        .text {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
 }
