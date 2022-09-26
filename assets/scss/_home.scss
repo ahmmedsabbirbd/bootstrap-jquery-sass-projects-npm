@@ -1,0 +1,70 @@
+/** home page **/
+.coffee-heaven {
+
+    &.py-110 {
+
+        @media screen and (max-width: 991px) { 
+            padding: 80px 0;
+        }
+        
+        @media screen and (max-width: 767px) { 
+            padding: 60px 0;
+        }
+    }
+    
+    .row {
+        
+        &:not(:last-child) {
+            margin-bottom: 60px;
+
+            @media screen and (max-width: 991px) { 
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    .style-2 {
+        flex-direction: row-reverse;
+
+        .coffee-heaven__content {
+            padding-left: 0;
+            text-align: right;
+            padding-right: 65px;
+
+            @media screen and (max-width: 991px) { 
+                padding-right: 30px;
+            }
+        }
+    }
+
+    .coffee-heaven__content {
+        
+        @media screen and (max-width: 991px) { 
+            padding-left: 30px;
+        }
+
+        @media screen and (max-width: 767px) { 
+            padding: 0;
+            margin-top: 30px;
+            text-align: center !important;
+        }
+
+        .description {
+
+            &.mb-40 {
+
+                @media screen and (max-width: 991px) { 
+                    margin-bottom: 30px;
+                }
+                
+                @media screen and (max-width: 767px) { 
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+.visit-reco {
+    background-color: #2C4325;
+}

@@ -6,23 +6,11 @@
         // meanmenu
         jQuery('#mobile-menu').meanmenu({
             meanMenuContainer: '.mobile-menu',
-            meanScreenWidth: "991"
+            meanScreenWidth: "9999"
         });
 
 
-    	/** main-slider **/	
-    	$('.main-slider-active').slick({
-            infinite: true,
-            dots: false,
-            arrows: false,
-            slidesToShow: 1,
-            autoplay: true,
-            autoplaySpeed: 10000,
-            slidesToScroll: 1,
-            nextArrow: '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-            prevArrow: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
-    	});
-
+    	 
         /** gallery-slider **/ 
         $('.gallery-slider-active').slick({
             infinite: true,

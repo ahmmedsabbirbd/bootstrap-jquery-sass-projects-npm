@@ -1,54 +1,93 @@
 .header-transparent{
-    position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, .5);
     z-index: 999;;
+    position: absolute;
+    background: rgba(0, 0, 0, .5);
 }
 
 .header-area{
+
     .main-menu{
+
         ul{
+
             li{
                 float: left;
-                a{
-                    font-family: 'Nunito Sans', sans-serif;
+
+                a{ 
                     font-size: 18px;
-                    line-height: 26px;
-                    text-transform: uppercase;
                     font-weight: 600;
-                    color: #046CF8;
+                    line-height: 26px;
                     padding-left: 25px;
+                    text-transform: uppercase;
+
                     &:hover {
-                        color: #046CF8;
+                        color: $primary;
                     }
                 }
             }
         }
     }
+
     .theme-btn{
-        padding-left: 50px;
-        a{
-            font-family: "Nunito Sans", sans-serif;
+        padding-left: 30px;
+
+        a { 
             font-size: 18px;
+            color: $black;
             line-height: 26px;
-            text-transform: capitalize;
-            color: #046CF8;
-            border: 1px solid #046CF8;
-            padding: 12px 41.17px;
             border-radius: 30px;
+            padding: 12px 41.17px;
+            text-transform: capitalize;
+            border: 1px solid $black;
+
             i{
-                color: #fff;
+                color: $white;
             }
         }
     }
 }
 
 /** mobile menu **/
-.mean-container a.meanmenu-reveal span {
-	display: block;
-	background: red;
-	height: 3px;
-	margin-top: 3px;
+.mean-container {
+
+    a.meanmenu-reveal {
+        width: 32px;
+        height: 28px; 
+        line-height: 31px;
+        padding: 14px 12px;
+        font-size: 29px !important;
+        background-color: $primary;
+
+        span {
+            margin: 0;
+            width: 32px;
+            height: 3px;
+            display: block;
+            background: $white;
+            margin-left: auto !important;
+            @include border-radius(500px);
+            @include transition(all .3s ease);
+
+            &:first-child { width: 12px; }
+            &:last-child { width: 20px; }
+            
+            &:not(:last-child) {
+                margin: 0  0 9px; 
+            }
+        }
+
+        &:hover {
+
+            span {
+                width: 32px;
+            }
+        }
+    }
+
+    .mean-nav {
+        margin-top: 52px;
+    }
 }

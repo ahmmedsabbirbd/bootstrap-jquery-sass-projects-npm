@@ -2,7 +2,7 @@
 body {
     color: $dark_white;
     background: #F7F4F0;
-    font: 400 18px/28px $pop;
+    font: 400 18px/23px $pop;
 }
 .img {
 max-width: 100%;
@@ -95,11 +95,8 @@ li {
 list-style: none
 }
 p {
-font-size: 16px;
-font-weight: 400;
-line-height: 26px;
-color: #2B343F;
 margin-bottom: 0;
+text-transform: capitalize;
 }
 hr {
 border-bottom: 1px solid #eceff8;
@@ -145,4 +142,104 @@ background-color:  #F5FAFF;;
 
 .theme-bg-dark{
 background-color:  #133460;;
+}
+
+h2, .h2 {
+    font-size: 60px;
+    line-height: 70px;
+}
+
+h3, .h3 {
+    font-size: 49px;
+    line-height: 59px;
+    letter-spacing: 0.035em;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6  .h6,{
+    color: $black;
+    font-family: $arse;
+    text-transform: capitalize;
+
+    &.ls-none {
+        letter-spacing: normal;
+    }
+}
+
+.container {
+	width: 100%;
+	max-width: 1220px;
+	padding-left: 20px;
+	padding-right: 20px;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+.row {
+	margin-left: -20px;
+	margin-right: -20px;
+
+	>[class*="col"] {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+.btn {
+    z-index: 1;
+    font-size: 24px;
+    color: #222222;
+    font-weight: 700;
+    line-height: 29px;
+    font-family: $but;
+    position: relative;
+    text-transform: capitalize;
+    text-decoration: underline;
+    padding: 9.5px 0 9.5px 36px;
+    @include transition(all .3s ease);
+    
+    display: inline-flex;
+    align-items: center;
+
+    @media screen and (max-width: 991px) {
+        font-size: 22px; 
+        line-height: 27px; 
+        padding: 7px 0 7px 30px; 
+    }
+    
+    &:after {
+        top: 0;
+        left: 0;
+        content: "";
+        width: 48px;
+        z-index: -1;
+        height: 100%;
+        position: absolute;
+        background-color: $primary;
+        @include transition(all .3s ease);
+
+        @media screen and (max-width: 991px) { 
+            left: 0;
+            width: 42px;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        max-width: 60px;
+        height: max-content;
+        padding-right: 30px;
+
+        @media screen and (max-width: 991px) { 
+            padding-right: 25px;
+        }
+    }
+
+    &:hover, &:focus {
+        box-shadow: none;
+        color: $primary;
+
+        &:after {
+            left: 26px;
+        }
+    }
 }
