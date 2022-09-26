@@ -55,49 +55,61 @@
 }
 
 .social-profile { 
-    gap: 24px;
-    z-index: 1;
-    padding: 10.5px 0;
-
-    @media screen and (max-width: 575px) { 
-        padding: 5px 0;
-    }
-
-    &:after, &:before {
-        top: 0;
-        content: "";
-        z-index: -1;
-        height: 100%;
-        width: 99999px;
-        position: absolute;
-        background-color: #2C4325;
-    }
-
-    &:before {
-        left: -100058px;
-        border-radius: 0px 100px 0px 0px;
+    
+    
+    ul {
+        gap: 24px;
+        z-index: 1;
+        flex-wrap: wrap;
+        padding: 10.5px 0;
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
         
-        @media screen and (max-width: 480px) { 
-            left: -100035px;
+        @media screen and (max-width: 575px) { 
+            padding: 5px 0;
         }
-    }
 
-    &:after {
-        right: -100058px;
-        border-radius: 100px 0px 0px 0px;
-
-        @media screen and (max-width: 480px) { 
-            right: -100035px;
+        &:after, &:before {
+            top: 0;
+            content: "";
+            z-index: -1;
+            height: 100%;
+            width: 99999px;
+            position: absolute;
+            background-color: #2C4325;
         }
-    }
+        
+        &:before {
+            left: -100061px;
+            border-radius: 0px 100px 0px 0px;
+            
+            @media screen and (max-width: 480px) { 
+                left: -100020px;
+            }
+        }
+        
+        &:after {
+            right: -100061px;
+            border-radius: 100px 0px 0px 0px;
+            
+            @media screen and (max-width: 480px) { 
+                right: -100020px;
+            }
+        }
+        
+        li {  
+            
+            a { 
+                color: $black; 
+                display: block;
+                font-size: 15px;
 
-    a { 
-        color: $black; 
-        font-size: 15px;
-
-        &:hover, &:focus {
-            color: #2C4325;
-            @include transform(translate(0, -5px));
+                &:hover, &:focus {
+                    color: #2C4325;
+                    @include transform(translate(0, -5px));
+                }
+            }
         }
     }
 }

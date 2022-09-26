@@ -799,14 +799,18 @@ label {
       color: #000;
       text-decoration: underline; }
 
-.social-profile {
+.social-profile ul {
   gap: 24px;
   z-index: 1;
-  padding: 10.5px 0; }
+  flex-wrap: wrap;
+  padding: 10.5px 0;
+  position: relative;
+  display: inline-flex;
+  justify-content: center; }
   @media screen and (max-width: 575px) {
-    .social-profile {
+    .social-profile ul {
       padding: 5px 0; } }
-  .social-profile:after, .social-profile:before {
+  .social-profile ul:after, .social-profile ul:before {
     top: 0;
     content: "";
     z-index: -1;
@@ -814,22 +818,23 @@ label {
     width: 99999px;
     position: absolute;
     background-color: #2C4325; }
-  .social-profile:before {
-    left: -100058px;
+  .social-profile ul:before {
+    left: -100061px;
     border-radius: 0px 100px 0px 0px; }
     @media screen and (max-width: 480px) {
-      .social-profile:before {
-        left: -100035px; } }
-  .social-profile:after {
-    right: -100058px;
+      .social-profile ul:before {
+        left: -100020px; } }
+  .social-profile ul:after {
+    right: -100061px;
     border-radius: 100px 0px 0px 0px; }
     @media screen and (max-width: 480px) {
-      .social-profile:after {
-        right: -100035px; } }
-  .social-profile a {
+      .social-profile ul:after {
+        right: -100020px; } }
+  .social-profile ul li a {
     color: #000;
+    display: block;
     font-size: 15px; }
-    .social-profile a:hover, .social-profile a:focus {
+    .social-profile ul li a:hover, .social-profile ul li a:focus {
       color: #2C4325;
       -webkit-transform: translate(0, -5px);
       -moz-transform: translate(0, -5px);
