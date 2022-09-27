@@ -157,7 +157,7 @@ h6, .h6 {
     line-height: 34px; 
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6  .h6, {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     margin: 0;
     padding: 0;
     color: $black;
@@ -200,6 +200,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6  .h6, {
     text-transform: capitalize;
     text-decoration: underline;
     padding: 9.5px 0 9.5px 36px;
+    @include border-radius(5px);
     @include transition(all .3s ease);
     
     display: inline-flex;
@@ -253,3 +254,35 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6  .h6, {
 .font-arse { font-family: $arse !important; }
 .font-weight-500 { font-weight: 500 !important ;}
 .font-weight-600 { font-weight: 600 !important ;}
+
+
+input[type="text"]:not(.select2-input),
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="password"],
+input[type="file"],
+select, textarea {
+	@include appearance;
+	border: 0 !important;
+	width: 100% !important;
+	color: $black !important;
+    box-shadow: none !important;
+	font-size: 18px !important;
+	font-weight: 400 !important;
+	box-shadow: none !important;
+	line-height: 30px !important; 
+	background: #F7F4F0 !important;
+	padding: 9px 16px !important;
+	@include transition(all 0.3s ease);
+	-webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    @include placeholderWithlettertraking($black, 18px, 30px, 0, 400);
+
+	&:hover, &:focus {
+		outline: 0;
+	}
+}
