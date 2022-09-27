@@ -94,6 +94,11 @@
                 position: absolute;
                 border: 20px solid #F7F4F0;
                 @include border-radius(500px);
+
+                -moz-animation: rotating 6s linear infinite;
+                -ms-animation: rotating 6s linear infinite;
+                -o-animation: rotating 6s linear infinite;
+                animation: rotating 6s linear infinite;
             }
         }
     }
@@ -113,6 +118,155 @@
         .text {
             font-size: 16px;
             line-height: 19px;
+        }
+    }
+}
+
+.banner {
+
+    .container {
+        z-index: 1;
+        position: relative;
+    }
+
+    .coffe {
+        left: 50%;
+        top: 207px;
+        z-index: -1;
+        font-size: 359px;
+        position: absolute;
+        line-height: 431px;
+        color: rgba(0, 0, 0, 0.05);
+        @include transform(translate(-50%, 0));
+    }
+
+    .scrollDown {
+        border: 0;
+        z-index: 1;
+        width: 100px;
+        height: 100px;  
+        overflow: hidden;
+        position: relative;
+        background-color: transparent; 
+
+        align-items: center;
+        display: inline-flex;
+        justify-content: center;
+        
+        i {
+            width: 69.77px;
+            display: block;
+            height: 69.77px;
+            line-height: 69.77px;
+            @include border-radius(500px);
+            background-color: $dark_black;
+            @include transition(all .3s ease);
+            
+            img {
+                max-height: 25px;
+            }
+        }
+        
+        span {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            position: absolute;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                @include transition(all .3s ease);
+ 
+                -moz-animation: rotating 6s linear infinite;
+                -ms-animation: rotating 6s linear infinite;
+                -o-animation: rotating 6s linear infinite;
+                animation: rotating 6s linear infinite;
+
+            }
+        }
+        
+        &:hover {
+            @include transform(scale(1.1));
+            
+            i {
+                background-color: $primary;
+            }
+        }
+    }
+
+    &__item {
+        margin: 159px -34px 0 0;
+
+        &.style-1 { 
+            margin: 0;
+            padding-left: 33px;
+            padding-right: 29px; 
+
+            .media {
+                max-width: 305px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &.style-2 {
+            margin: 303px 0 0 -60px;
+
+            .title {
+                margin-bottom: 0;
+            }
+
+            .media {
+                max-width: 323px;
+                margin-bottom: 22px;
+            }
+
+            .description {
+                margin-bottom: 28px;
+            }
+        }
+
+        .title {
+            margin-bottom: 23px;
+        }
+
+        .media {
+            max-width: 407px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__bottom {
+        gap: 20px 40px;
+        margin-top: -50px;
+        max-width: 787.49px;
+
+        .btn {
+            padding-left: 25px;
+            
+            img {
+                max-width: 80px;
+                padding-right: 43px;
+
+                @media screen and (max-width: 991px) {
+                    max-width: 58px;
+                    padding-right: 25px;
+                }
+            }
+
+            &:hover, &:focus {
+
+                &:after {
+                    left: 19px;
+
+                    @media screen and (max-width: 991px) {
+                        left: 22px;
+                    }
+                }
+            }
         }
     }
 }

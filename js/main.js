@@ -9,7 +9,17 @@
             meanScreenWidth: "9999"
         });
 
+        /*** ScrollDown */
+        $('.scrollDown').click(function() {
+            var target = $('#primary');
+            var space = $(this).data('space');
 
+            if (target.length) {
+                $('html,body').animate({
+                scrollTop: target.offset().top - space
+                }, 1000);
+            }
+        });
     	 
         /** gallery-slider **/ 
         $('.gallery-slider-active').slick({

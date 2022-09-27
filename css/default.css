@@ -1318,7 +1318,9 @@
 
 
 /* Background Color */
-
+.dark-white-bg {
+	background: rgba(44, 67, 37, 0.06);
+}
 .gray-bg {
 	background: #333333;
 }
@@ -1355,6 +1357,10 @@
 
 .dark-white {
 	color: #888888;
+}
+
+.dark-black	{
+	color: #222222;
 }
 
 
