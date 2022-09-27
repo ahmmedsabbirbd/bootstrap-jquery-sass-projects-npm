@@ -185,6 +185,10 @@ h1, .h1 {
     h1, .h1 {
       font-size: 50px;
       line-height: 60px; } }
+  @media screen and (max-width: 767px) {
+    h1, .h1 {
+      font-size: 42px;
+      line-height: 52px; } }
 
 h2, .h2 {
   font-size: 60px;
@@ -197,6 +201,11 @@ h2, .h2 {
     h2, .h2 {
       font-size: 42px;
       line-height: 52px; } }
+  @media screen and (max-width: 767px) {
+    h2, .h2 {
+      font-size: 36px;
+      line-height: 46px;
+      letter-spacing: 0.025em; } }
 
 h3, .h3 {
   font-size: 49px;
@@ -212,6 +221,10 @@ h3, .h3 {
       font-size: 36px;
       line-height: 46px;
       letter-spacing: 0.025em; } }
+  @media screen and (max-width: 767px) {
+    h3, .h3 {
+      font-size: 30px;
+      line-height: 40px; } }
 
 h4, .h4 {
   font-size: 40px;
@@ -224,6 +237,10 @@ h4, .h4 {
     h4, .h4 {
       font-size: 30px;
       line-height: 40px; } }
+  @media screen and (max-width: 767px) {
+    h4, .h4 {
+      font-size: 25px;
+      line-height: 35px; } }
 
 h5, .h5 {
   font-size: 36px;
@@ -236,6 +253,10 @@ h5, .h5 {
     h5, .h5 {
       font-size: 25px;
       line-height: 35px; } }
+  @media screen and (max-width: 767px) {
+    h5, .h5 {
+      font-size: 22px;
+      line-height: 32px; } }
 
 h6, .h6 {
   font-size: 34px;
@@ -472,6 +493,9 @@ select, textarea {
   z-index: 999;
   position: absolute; }
 
+@media screen and (max-width: 767px) {
+  .header-area {
+    padding: 20px 0; } }
 .header-area .main-menu ul li {
   float: left; }
   .header-area .main-menu ul li a {
@@ -582,11 +606,20 @@ select, textarea {
 @media screen and (max-width: 991px) {
   .about-us__content {
     margin-bottom: 50px; } }
+@media screen and (max-width: 767px) {
+  .about-us__text .title {
+    text-align: center !important; } }
+@media screen and (max-width: 767px) {
+  .about-us__text .media img {
+    width: 100%; } }
 .about-us__media {
   margin-bottom: 172px; }
   @media screen and (max-width: 991px) {
     .about-us__media {
       margin-bottom: 77px; } }
+  @media screen and (max-width: 767px) {
+    .about-us__media-wrapper {
+      margin-bottom: 40px; } }
   .about-us__media .image {
     max-width: 438px; }
     @media screen and (max-width: 1199px) {
@@ -595,6 +628,13 @@ select, textarea {
     @media screen and (max-width: 890px) {
       .about-us__media .image {
         max-width: 290px; } }
+    @media screen and (max-width: 767px) {
+      .about-us__media .image {
+        max-width: 370px; } }
+    @media screen and (max-width: 575px) {
+      .about-us__media .image {
+        max-width: 100%;
+        padding-right: 71px; } }
     .about-us__media .image.one {
       width: 346px;
       right: -192px;
@@ -624,6 +664,13 @@ select, textarea {
           right: -96px;
           height: 220px;
           bottom: -96px; } }
+      @media screen and (max-width: 575px) {
+        .about-us__media .image.one {
+          right: 0;
+          width: 150px;
+          height: 150px;
+          padding-right: 0;
+          border-width: 10px; } }
 .about-us__experience {
   width: 288px;
   height: 288px;
@@ -644,6 +691,10 @@ select, textarea {
     .about-us__experience {
       width: 143px;
       height: 143px; } }
+  @media screen and (max-width: 575px) {
+    .about-us__experience {
+      margin-left: auto;
+      margin-right: auto; } }
   .about-us__experience .number {
     color: #D1793E;
     font-size: 105px;
@@ -767,6 +818,9 @@ select, textarea {
   @media screen and (max-width: 991px) {
     .banner__item {
       margin: 139px 0 0 0; } }
+  @media screen and (max-width: 767px) {
+    .banner__item {
+      margin-bottom: 40px; } }
   .banner__item.style-1 {
     margin: 0;
     padding-left: 33px;
@@ -774,6 +828,9 @@ select, textarea {
     @media screen and (max-width: 1199px) {
       .banner__item.style-1 {
         padding: 0 20px 0 0; } }
+    @media screen and (max-width: 767px) {
+      .banner__item.style-1 {
+        margin-bottom: 40px; } }
     .banner__item.style-1 .media {
       max-width: 305px;
       margin-bottom: 20px; }
@@ -788,6 +845,9 @@ select, textarea {
     @media screen and (max-width: 991px) {
       .banner__item.style-2 {
         margin: 293px 0 0 -50px; } }
+    @media screen and (max-width: 767px) {
+      .banner__item.style-2 {
+        margin: 0; } }
     .banner__item.style-2 .title {
       margin-bottom: 0; }
     .banner__item.style-2 .media {
@@ -806,17 +866,30 @@ select, textarea {
     @media screen and (max-width: 991px) {
       .banner__item .title {
         margin-bottom: 15px; } }
+    @media screen and (max-width: 767px) {
+      .banner__item .title {
+        text-align: center;
+        margin-bottom: 15px !important; } }
   .banner__item .media {
     max-width: 407px;
     margin-bottom: 20px; }
     @media screen and (max-width: 991px) {
       .banner__item .media {
         margin-bottom: 15px; } }
+    @media screen and (max-width: 767px) {
+      .banner__item .media {
+        max-width: 100% !important; } }
+    @media screen and (max-width: 767px) {
+      .banner__item .media img {
+        width: 100%; } }
   .banner__item .description {
     margin-bottom: 30px; }
     @media screen and (max-width: 991px) {
       .banner__item .description {
         margin-bottom: 20px; } }
+    @media screen and (max-width: 767px) {
+      .banner__item .description {
+        margin-bottom: 0 !important; } }
 .banner__bottom {
   gap: 20px 40px;
   margin-top: -50px;
@@ -827,6 +900,14 @@ select, textarea {
   @media screen and (max-width: 991px) {
     .banner__bottom {
       margin-top: -30px; } }
+  @media screen and (max-width: 767px) {
+    .banner__bottom {
+      margin-top: 40px;
+      max-width: 100%; } }
+  @media screen and (max-width: 380px) {
+    .banner__bottom {
+      flex-direction: column;
+      align-items: center !important; } }
   .banner__bottom .btn {
     padding-left: 25px; }
     .banner__bottom .btn img {
@@ -844,10 +925,10 @@ select, textarea {
 
 @media screen and (max-width: 991px) {
   .contact {
-    padding-bottom: 80px; } }
+    padding: 80px 0; } }
 @media screen and (max-width: 767px) {
   .contact {
-    padding-bottom: 60px; } }
+    padding: 60px 0; } }
 @media screen and (max-width: 991px) {
   .contact__content {
     padding-left: 0; } }
@@ -856,7 +937,7 @@ select, textarea {
     margin-bottom: 5px; } }
 @media screen and (max-width: 991px) {
   .contact__content .description {
-    margin-bottom: px; } }
+    margin-bottom: 20px; } }
 .contact__form .form-group {
   margin-bottom: 14px;
   display: flex;
@@ -890,6 +971,10 @@ select, textarea {
     color: #000; }
 .contact__map {
   margin-right: -10px; }
+  @media screen and (max-width: 767px) {
+    .contact__map {
+      margin-right: 0;
+      margin-bottom: 40px; } }
   .contact__map .location {
     left: 0;
     gap: 10px;
@@ -898,10 +983,25 @@ select, textarea {
     position: absolute;
     background-color: #2C4325;
     padding: 25px 11px 14px 23px; }
+    @media screen and (max-width: 991px) {
+      .contact__map .location {
+        margin: 7px;
+        width: 175px;
+        padding: 19px 11px 13px 19px; } }
     .contact__map .location .text-left {
       max-width: 159px; }
+      @media screen and (max-width: 991px) {
+        .contact__map .location .text-left {
+          max-width: 127px; } }
+      @media screen and (max-width: 991px) {
+        .contact__map .location .text-left .media {
+          margin-bottom: 10px !important; } }
       .contact__map .location .text-left .description {
         color: #C8C8C8; }
+        @media screen and (max-width: 991px) {
+          .contact__map .location .text-left .description {
+            font-size: 14px;
+            line-height: 20px; } }
     .contact__map .location .btn {
       padding: 5.5px 0px 5.5px 20px; }
       .contact__map .location .btn:after {
@@ -923,6 +1023,9 @@ select, textarea {
   @media screen and (max-width: 991px) {
     #map {
       height: 550px; } }
+  @media screen and (max-width: 767px) {
+    #map {
+      height: 400px; } }
   #map .gmnoprint {
     display: none; }
 
@@ -971,14 +1074,26 @@ select, textarea {
   @media screen and (max-width: 991px) {
     .our-menu__content {
       margin-bottom: 60px; } }
+  @media screen and (max-width: 767px) {
+    .our-menu__content {
+      margin-bottom: 40px; } }
   @media screen and (max-width: 991px) {
     .our-menu__content .title {
       margin-bottom: 35px; } }
+  @media screen and (max-width: 767px) {
+    .our-menu__content .title {
+      margin-bottom: 25px; } }
   .our-menu__content .button-group {
     gap: 30px 60px; }
     @media screen and (max-width: 991px) {
       .our-menu__content .button-group {
         gap: 20px 40px; } }
+    @media screen and (max-width: 767px) {
+      .our-menu__content .button-group {
+        gap: 10px 15px; } }
+    @media screen and (max-width: 575px) {
+      .our-menu__content .button-group {
+        gap: 5px 10px; } }
     .our-menu__content .button-group button {
       border: 0;
       padding: 0;
@@ -992,6 +1107,10 @@ select, textarea {
         .our-menu__content .button-group button {
           font-size: 20px;
           line-height: 25px; } }
+      @media screen and (max-width: 575px) {
+        .our-menu__content .button-group button {
+          font-size: 17px;
+          line-height: 22px; } }
       .our-menu__content .button-group button:hover, .our-menu__content .button-group button.active {
         color: #F7F4F0;
         text-decoration: underline; }

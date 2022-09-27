@@ -83,11 +83,38 @@
         }
     }
 
+    &__text {
+
+        .title {
+
+            @media screen and (max-width: 767px) { 
+                text-align: center !important;
+            }
+        }
+
+        .media {
+
+            img {
+                
+                @media screen and (max-width: 767px) { 
+                    width: 100%;
+                }
+            }
+        }
+    }
+
     &__media {
         margin-bottom: 172px;
 
         @media screen and (max-width: 991px) { 
             margin-bottom: 77px;
+        }
+
+        &-wrapper {
+   
+            @media screen and (max-width: 767px) { 
+                margin-bottom: 40px;
+            }
         }
 
         .image {
@@ -99,6 +126,15 @@
 
             @media screen and (max-width: 890px) { 
                 max-width: 290px;
+            }
+
+            @media screen and (max-width: 767px) {
+                max-width: 370px;
+            }
+
+            @media screen and (max-width: 575px) {
+                max-width: 100%;
+                padding-right: 71px;
             }
 
             &.one {
@@ -120,6 +156,14 @@
                     right: -96px;
                     height: 220px;
                     bottom: -96px;
+                }
+
+                @media screen and (max-width: 575px) { 
+                    right: 0;
+                    width: 150px;
+                    height: 150px;
+                    padding-right: 0;
+                    border-width: 10px;
                 }
 
                 -moz-animation: rotating 6s linear infinite;
@@ -144,6 +188,11 @@
         @media screen and (max-width: 991px) { 
             width: 143px;
             height: 143px;
+        }
+
+        @media screen and (max-width: 575px) { 
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .number {
@@ -285,6 +334,10 @@
             margin: 139px 0 0 0;
         }
 
+        @media screen and (max-width: 767px) { 
+            margin-bottom: 40px;
+        }
+
         &.style-1 { 
             margin: 0;
             padding-left: 33px;
@@ -292,6 +345,10 @@
 
             @media screen  and (max-width: 1199px) { 
                 padding: 0 20px 0 0;
+            }
+
+            @media screen and (max-width: 767px) { 
+                margin-bottom: 40px;
             }
 
             .media {
@@ -313,6 +370,10 @@
             
             @media screen  and (max-width: 991px) { 
                 margin: 293px 0 0 -50px;
+            }
+
+            @media screen and (max-width: 767px) { 
+                margin: 0;
             }
 
             .title {
@@ -343,6 +404,11 @@
             @media screen  and (max-width: 991px) { 
                 margin-bottom: 15px;
             }
+
+            @media screen and (max-width: 767px) { 
+                text-align: center;
+                margin-bottom: 15px !important;
+            }
         }
 
         .media {
@@ -352,6 +418,17 @@
             @media screen  and (max-width: 991px) { 
                 margin-bottom: 15px;
             }
+
+            @media screen and (max-width: 767px) { 
+                max-width: 100% !important;
+            }
+
+            img {
+
+                @media screen and (max-width: 767px) { 
+                    width: 100%;
+                }
+            }
         }
 
         .description {
@@ -359,6 +436,10 @@
 
             @media screen  and (max-width: 991px) { 
                 margin-bottom: 20px;
+            }
+
+            @media screen and (max-width: 767px) { 
+                margin-bottom: 0 !important;
             }
         }
     }
@@ -368,13 +449,22 @@
         margin-top: -50px;
         max-width: 787.49px;
         
-
         @media screen  and (max-width: 1199px) { 
             max-width: 765px;
         }
 
         @media screen  and (max-width: 991px) { 
             margin-top: -30px;
+        }
+        
+        @media screen and (max-width: 767px) { 
+            margin-top: 40px;
+            max-width: 100%;
+        }
+
+        @media screen and (max-width: 380px) { 
+            flex-direction: column;
+            align-items: center !important;
         }
 
         .btn {
@@ -407,11 +497,11 @@
 .contact {
 
     @media screen and (max-width: 991px) { 
-        padding-bottom: 80px;
+        padding: 80px 0;
     }
     
     @media screen and (max-width: 767px) { 
-        padding-bottom: 60px;
+        padding: 60px 0;
     }
 
     &__content {
@@ -491,6 +581,11 @@
     &__map {
         margin-right: -10px;
 
+        @media screen and (max-width: 767px) { 
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
+
         .location {
             left: 0;
             gap: 10px;
@@ -500,11 +595,33 @@
             background-color: #2C4325;
             padding: 25px 11px 14px 23px;
 
+            @media screen and (max-width: 991px) {
+                margin: 7px;
+                width: 175px; 
+                padding: 19px 11px 13px 19px;
+            }
+
             .text-left {
                 max-width: 159px;
 
+                @media screen and (max-width: 991px) {
+                    max-width: 127px;
+                }
+
+                .media {
+
+                    @media screen and (max-width: 991px) {
+                        margin-bottom: 10px !important;
+                    }
+                }
+
                 .description {
                     color: #C8C8C8;
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
                 }
             }
 
@@ -543,6 +660,10 @@
 
     @media screen and (max-width: 991px) { 
         height: 550px;
+    }
+
+    @media screen and (max-width: 767px) { 
+        height: 400px;
     }
 
     .gmnoprint {
@@ -615,10 +736,18 @@
             margin-bottom: 60px;
         }
 
+        @media screen and (max-width: 767px) { 
+            margin-bottom: 40px;
+        }
+
         .title {
 
             @media screen and (max-width: 991px) { 
                 margin-bottom: 35px;
+            }
+
+            @media screen and (max-width: 767px) { 
+                margin-bottom: 25px;
             }
         }
 
@@ -627,6 +756,14 @@
 
             @media screen and (max-width: 991px) { 
                 gap: 20px 40px;
+            }
+
+            @media screen and (max-width: 767px) { 
+                gap: 10px 15px;
+            }
+
+            @media screen and (max-width: 575px) { 
+                gap: 5px 10px;
             }
             
             button {
@@ -642,6 +779,11 @@
                 @media screen and (max-width: 767px) { 
                     font-size: 20px;
                     line-height: 25px;
+                }
+
+                @media screen and (max-width: 575px) { 
+                    font-size: 17px;
+                    line-height: 22px;
                 }
 
                 &:hover, &.active {
