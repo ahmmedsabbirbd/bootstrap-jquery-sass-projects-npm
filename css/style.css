@@ -181,6 +181,10 @@ h1, .h1 {
     h1, .h1 {
       font-size: 70px;
       line-height: 80px; } }
+  @media screen and (max-width: 991px) {
+    h1, .h1 {
+      font-size: 50px;
+      line-height: 60px; } }
 
 h2, .h2 {
   font-size: 60px;
@@ -189,6 +193,10 @@ h2, .h2 {
     h2, .h2 {
       font-size: 50px;
       line-height: 60px; } }
+  @media screen and (max-width: 991px) {
+    h2, .h2 {
+      font-size: 42px;
+      line-height: 52px; } }
 
 h3, .h3 {
   font-size: 49px;
@@ -199,6 +207,11 @@ h3, .h3 {
       font-size: 42px;
       line-height: 52px;
       letter-spacing: 0.030em; } }
+  @media screen and (max-width: 991px) {
+    h3, .h3 {
+      font-size: 36px;
+      line-height: 46px;
+      letter-spacing: 0.025em; } }
 
 h4, .h4 {
   font-size: 40px;
@@ -207,6 +220,10 @@ h4, .h4 {
     h4, .h4 {
       font-size: 36px;
       line-height: 46px; } }
+  @media screen and (max-width: 991px) {
+    h4, .h4 {
+      font-size: 30px;
+      line-height: 40px; } }
 
 h5, .h5 {
   font-size: 36px;
@@ -215,6 +232,10 @@ h5, .h5 {
     h5, .h5 {
       font-size: 30px;
       line-height: 40px; } }
+  @media screen and (max-width: 991px) {
+    h5, .h5 {
+      font-size: 25px;
+      line-height: 35px; } }
 
 h6, .h6 {
   font-size: 34px;
@@ -223,6 +244,10 @@ h6, .h6 {
     h6, .h6 {
       font-size: 25px;
       line-height: 35px; } }
+  @media screen and (max-width: 991px) {
+    h6, .h6 {
+      font-size: 20px;
+      line-height: 30px; } }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin: 0;
@@ -548,13 +573,28 @@ select, textarea {
   .coffee-heaven .coffee-heaven__content .description.mb-40 {
     margin-bottom: 20px; } }
 
+@media screen and (max-width: 991px) {
+  .about-us {
+    padding-bottom: 80px; } }
+@media screen and (max-width: 767px) {
+  .about-us {
+    padding-bottom: 60px; } }
+@media screen and (max-width: 991px) {
+  .about-us__content {
+    margin-bottom: 50px; } }
 .about-us__media {
   margin-bottom: 172px; }
+  @media screen and (max-width: 991px) {
+    .about-us__media {
+      margin-bottom: 77px; } }
   .about-us__media .image {
     max-width: 438px; }
     @media screen and (max-width: 1199px) {
       .about-us__media .image {
         max-width: 370px; } }
+    @media screen and (max-width: 890px) {
+      .about-us__media .image {
+        max-width: 290px; } }
     .about-us__media .image.one {
       width: 346px;
       right: -192px;
@@ -578,6 +618,12 @@ select, textarea {
         .about-us__media .image.one {
           width: 280px;
           height: 280px; } }
+      @media screen and (max-width: 991px) {
+        .about-us__media .image.one {
+          width: 220px;
+          right: -96px;
+          height: 220px;
+          bottom: -96px; } }
 .about-us__experience {
   width: 288px;
   height: 288px;
@@ -594,6 +640,10 @@ select, textarea {
     .about-us__experience {
       width: 210px;
       height: 210px; } }
+  @media screen and (max-width: 991px) {
+    .about-us__experience {
+      width: 143px;
+      height: 143px; } }
   .about-us__experience .number {
     color: #D1793E;
     font-size: 105px;
@@ -602,10 +652,20 @@ select, textarea {
       .about-us__experience .number {
         font-size: 72px;
         line-height: 50px; } }
+    @media screen and (max-width: 991px) {
+      .about-us__experience .number {
+        font-size: 40px;
+        line-height: 30px; } }
   .about-us__experience .text {
     font-size: 16px;
     line-height: 19px; }
 
+@media screen and (max-width: 991px) {
+  .banner {
+    padding-bottom: 80px; } }
+@media screen and (max-width: 767px) {
+  .banner {
+    padding-bottom: 60px; } }
 .banner .container {
   z-index: 1;
   position: relative; }
@@ -626,6 +686,10 @@ select, textarea {
     .banner .coffe {
       font-size: 320px;
       line-height: 391px; } }
+  @media screen and (max-width: 991px) {
+    .banner .coffe {
+      font-size: 300px;
+      line-height: 371px; } }
 .banner .scrollDown {
   border: 0;
   z-index: 1;
@@ -700,6 +764,9 @@ select, textarea {
   @media screen and (max-width: 1199px) {
     .banner__item {
       margin: 149px 0 0 0; } }
+  @media screen and (max-width: 991px) {
+    .banner__item {
+      margin: 139px 0 0 0; } }
   .banner__item.style-1 {
     margin: 0;
     padding-left: 33px;
@@ -710,9 +777,15 @@ select, textarea {
     .banner__item.style-1 .media {
       max-width: 305px;
       margin-bottom: 20px; }
+      @media screen and (max-width: 991px) {
+        .banner__item.style-1 .media {
+          margin-bottom: 15px; } }
   .banner__item.style-2 {
     margin: 303px 0 0 -60px; }
     @media screen and (max-width: 1199px) {
+      .banner__item.style-2 {
+        margin: 193px 0 0 0; } }
+    @media screen and (max-width: 991px) {
       .banner__item.style-2 {
         margin: 293px 0 0 -50px; } }
     .banner__item.style-2 .title {
@@ -720,15 +793,30 @@ select, textarea {
     .banner__item.style-2 .media {
       max-width: 323px;
       margin-bottom: 22px; }
+      @media screen and (max-width: 991px) {
+        .banner__item.style-2 .media {
+          margin-bottom: 15px; } }
     .banner__item.style-2 .description {
       margin-bottom: 28px; }
+      @media screen and (max-width: 991px) {
+        .banner__item.style-2 .description {
+          margin-bottom: 20px; } }
   .banner__item .title {
     margin-bottom: 23px; }
+    @media screen and (max-width: 991px) {
+      .banner__item .title {
+        margin-bottom: 15px; } }
   .banner__item .media {
     max-width: 407px;
     margin-bottom: 20px; }
+    @media screen and (max-width: 991px) {
+      .banner__item .media {
+        margin-bottom: 15px; } }
   .banner__item .description {
     margin-bottom: 30px; }
+    @media screen and (max-width: 991px) {
+      .banner__item .description {
+        margin-bottom: 20px; } }
 .banner__bottom {
   gap: 20px 40px;
   margin-top: -50px;
@@ -736,6 +824,9 @@ select, textarea {
   @media screen and (max-width: 1199px) {
     .banner__bottom {
       max-width: 765px; } }
+  @media screen and (max-width: 991px) {
+    .banner__bottom {
+      margin-top: -30px; } }
   .banner__bottom .btn {
     padding-left: 25px; }
     .banner__bottom .btn img {
@@ -751,6 +842,21 @@ select, textarea {
         .banner__bottom .btn:hover:after, .banner__bottom .btn:focus:after {
           left: 22px; } }
 
+@media screen and (max-width: 991px) {
+  .contact {
+    padding-bottom: 80px; } }
+@media screen and (max-width: 767px) {
+  .contact {
+    padding-bottom: 60px; } }
+@media screen and (max-width: 991px) {
+  .contact__content {
+    padding-left: 0; } }
+@media screen and (max-width: 991px) {
+  .contact__content .title {
+    margin-bottom: 5px; } }
+@media screen and (max-width: 991px) {
+  .contact__content .description {
+    margin-bottom: px; } }
 .contact__form .form-group {
   margin-bottom: 14px;
   display: flex;
@@ -814,20 +920,32 @@ select, textarea {
   @media screen and (max-width: 1199px) {
     #map {
       height: 620px; } }
+  @media screen and (max-width: 991px) {
+    #map {
+      height: 550px; } }
   #map .gmnoprint {
     display: none; }
 
 .our-menu {
   z-index: 1;
   position: relative; }
+  @media screen and (max-width: 991px) {
+    .our-menu {
+      padding: 80px 0; } }
+  @media screen and (max-width: 767px) {
+    .our-menu {
+      padding: 60px 0; } }
   .our-menu:before {
     top: 0;
     width: 100%;
     z-index: -1;
     content: "";
-    height: 693px;
+    height: 697px;
     position: absolute;
     background-image: url("../images/home-page/overly.png"); }
+    @media screen and (max-width: 991px) {
+      .our-menu:before {
+        height: 465px; } }
   .our-menu .bg-image {
     top: 0;
     z-index: 1;
@@ -838,6 +956,9 @@ select, textarea {
     position: absolute;
     mix-blend-mode: multiply;
     background-repeat: no-repeat; }
+    @media screen and (max-width: 991px) {
+      .our-menu .bg-image {
+        height: 465px; } }
   .our-menu .grid {
     margin-bottom: -40px; }
     .our-menu .grid-item {
@@ -847,9 +968,18 @@ select, textarea {
         .our-menu .grid-item a img {
           width: 100%;
           height: auto; }
-  .our-menu .button-group {
+  @media screen and (max-width: 991px) {
+    .our-menu__content {
+      margin-bottom: 60px; } }
+  @media screen and (max-width: 991px) {
+    .our-menu__content .title {
+      margin-bottom: 35px; } }
+  .our-menu__content .button-group {
     gap: 30px 60px; }
-    .our-menu .button-group button {
+    @media screen and (max-width: 991px) {
+      .our-menu__content .button-group {
+        gap: 20px 40px; } }
+    .our-menu__content .button-group button {
       border: 0;
       padding: 0;
       color: #A6A6A6;
@@ -858,7 +988,11 @@ select, textarea {
       line-height: 29px;
       background: transparent;
       text-transform: capitalize; }
-      .our-menu .button-group button:hover, .our-menu .button-group button.active {
+      @media screen and (max-width: 767px) {
+        .our-menu__content .button-group button {
+          font-size: 20px;
+          line-height: 25px; } }
+      .our-menu__content .button-group button:hover, .our-menu__content .button-group button.active {
         color: #F7F4F0;
         text-decoration: underline; }
 

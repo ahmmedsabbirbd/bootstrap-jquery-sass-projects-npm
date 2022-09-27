@@ -134,11 +134,19 @@ h1, .h1 { font-size: 80px; line-height: 90px;
     @media screen  and (max-width: 1199px) { 
         font-size: 70px; line-height: 80px;
     }
+
+    @media screen  and (max-width: 991px) { 
+        font-size: 50px; line-height: 60px;
+    }
 }
 h2, .h2 { font-size: 60px; line-height: 70px;
     
     @media screen  and (max-width: 1199px) { 
         font-size: 50px; line-height: 60px;
+    }
+
+    @media screen  and (max-width: 991px) { 
+        font-size: 42px; line-height: 52px; ;
     }
 }
 h3, .h3 { font-size: 49px; line-height: 59px; letter-spacing: 0.035em; 
@@ -146,11 +154,19 @@ h3, .h3 { font-size: 49px; line-height: 59px; letter-spacing: 0.035em;
     @media screen  and (max-width: 1199px) { 
         font-size: 42px; line-height: 52px; letter-spacing: 0.030em;
     }
+
+    @media screen  and (max-width: 991px) { 
+        font-size: 36px; line-height: 46px; letter-spacing: 0.025em;
+    }
 }
 h4, .h4 { font-size: 40px; line-height: 50px; 
     
     @media screen  and (max-width: 1199px) { 
         font-size: 36px; line-height: 46px;
+    }
+
+    @media screen  and (max-width: 991px) { 
+        font-size: 30px; line-height: 40px;
     }
 }
 h5, .h5 { font-size: 36px; line-height: 46px; 
@@ -158,11 +174,19 @@ h5, .h5 { font-size: 36px; line-height: 46px;
     @media screen  and (max-width: 1199px) { 
         font-size: 30px; line-height: 40px;
     }
+    
+    @media screen  and (max-width: 991px) { 
+        font-size: 25px; line-height: 35px;
+    }
 }
 h6, .h6 { font-size: 34px; line-height: 44px; 
     
     @media screen  and (max-width: 1199px) { 
         font-size: 25px; line-height: 35px;
+    }
+
+    @media screen  and (max-width: 991px) { 
+        font-size: 20px; line-height: 30px;
     }
 }
 

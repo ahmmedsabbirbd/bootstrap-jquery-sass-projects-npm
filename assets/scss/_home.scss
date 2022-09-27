@@ -4,6 +4,7 @@
 }
 
 .coffee-heaven {
+
     @media screen and (max-width: 991px) { 
         padding: 80px 0;
     }
@@ -67,14 +68,37 @@
 
 .about-us {
 
+    @media screen and (max-width: 991px) { 
+        padding-bottom: 80px;
+    }
+    
+    @media screen and (max-width: 767px) { 
+        padding-bottom: 60px;
+    }
+
+    &__content {
+
+        @media screen and (max-width: 991px) { 
+            margin-bottom: 50px;
+        }
+    }
+
     &__media {
         margin-bottom: 172px;
+
+        @media screen and (max-width: 991px) { 
+            margin-bottom: 77px;
+        }
 
         .image {
             max-width: 438px;
 
             @media screen and (max-width: 1199px) { 
                 max-width: 370px;
+            }
+
+            @media screen and (max-width: 890px) { 
+                max-width: 290px;
             }
 
             &.one {
@@ -89,6 +113,13 @@
                 @media screen and (max-width: 1199px) { 
                     width: 280px;
                     height: 280px;
+                }
+
+                @media screen and (max-width: 991px) { 
+                    width: 220px;
+                    right: -96px;
+                    height: 220px;
+                    bottom: -96px;
                 }
 
                 -moz-animation: rotating 6s linear infinite;
@@ -110,6 +141,11 @@
             height: 210px;
         }
 
+        @media screen and (max-width: 991px) { 
+            width: 143px;
+            height: 143px;
+        }
+
         .number {
             color: $primary;
             font-size: 105px;
@@ -118,6 +154,11 @@
             @media screen and (max-width: 1199px) { 
                 font-size: 72px;
                 line-height: 50px;
+            }
+
+            @media screen and (max-width: 991px) { 
+                font-size: 40px;
+                line-height: 30px;
             }
         }
 
@@ -129,6 +170,14 @@
 }
 
 .banner {
+
+    @media screen and (max-width: 991px) { 
+        padding-bottom: 80px;
+    }
+    
+    @media screen and (max-width: 767px) { 
+        padding-bottom: 60px;
+    }
 
     .container {
         z-index: 1;
@@ -148,6 +197,11 @@
         @media screen  and (max-width: 1199px) {
             font-size: 320px;
             line-height: 391px;
+        }
+
+        @media screen  and (max-width: 991px) {
+            font-size: 300px;
+            line-height: 371px;
         }
     }
 
@@ -227,6 +281,10 @@
             margin: 149px 0 0 0;
         }
 
+        @media screen  and (max-width: 991px) { 
+            margin: 139px 0 0 0;
+        }
+
         &.style-1 { 
             margin: 0;
             padding-left: 33px;
@@ -239,13 +297,21 @@
             .media {
                 max-width: 305px;
                 margin-bottom: 20px;
+
+                @media screen  and (max-width: 991px) { 
+                    margin-bottom: 15px;
+                }
             }
         }
 
         &.style-2 {
             margin: 303px 0 0 -60px;
-            
+
             @media screen  and (max-width: 1199px) { 
+                margin: 193px 0 0 0;
+            }
+            
+            @media screen  and (max-width: 991px) { 
                 margin: 293px 0 0 -50px;
             }
 
@@ -256,24 +322,44 @@
             .media {
                 max-width: 323px;
                 margin-bottom: 22px;
+
+                @media screen  and (max-width: 991px) { 
+                    margin-bottom: 15px;
+                }
             }
 
             .description {
                 margin-bottom: 28px;
+
+                @media screen  and (max-width: 991px) { 
+                    margin-bottom: 20px;
+                }
             }
         }
 
         .title {
             margin-bottom: 23px;
+
+            @media screen  and (max-width: 991px) { 
+                margin-bottom: 15px;
+            }
         }
 
         .media {
             max-width: 407px;
             margin-bottom: 20px;
+
+            @media screen  and (max-width: 991px) { 
+                margin-bottom: 15px;
+            }
         }
 
         .description {
             margin-bottom: 30px;
+
+            @media screen  and (max-width: 991px) { 
+                margin-bottom: 20px;
+            }
         }
     }
 
@@ -281,9 +367,14 @@
         gap: 20px 40px;
         margin-top: -50px;
         max-width: 787.49px;
+        
 
         @media screen  and (max-width: 1199px) { 
             max-width: 765px;
+        }
+
+        @media screen  and (max-width: 991px) { 
+            margin-top: -30px;
         }
 
         .btn {
@@ -314,6 +405,35 @@
 }
 
 .contact {
+
+    @media screen and (max-width: 991px) { 
+        padding-bottom: 80px;
+    }
+    
+    @media screen and (max-width: 767px) { 
+        padding-bottom: 60px;
+    }
+
+    &__content {
+        
+        @media screen and (max-width: 991px) { 
+            padding-left: 0;
+        }
+
+        .title {
+
+            @media screen and (max-width: 991px) { 
+                margin-bottom: 5px;
+            }
+        }
+
+        .description {
+            
+            @media screen and (max-width: 991px) { 
+                margin-bottom: 20px;
+            }
+        }
+    }
 
     &__form {
 
@@ -421,6 +541,10 @@
         height: 620px;
     }
 
+    @media screen and (max-width: 991px) { 
+        height: 550px;
+    }
+
     .gmnoprint {
         display: none;
     }
@@ -430,14 +554,26 @@
     z-index: 1;
     position: relative;
 
+    @media screen and (max-width: 991px) { 
+        padding: 80px 0;
+    }
+    
+    @media screen and (max-width: 767px) { 
+        padding: 60px 0;
+    }
+
     &:before {
         top: 0;
         width: 100%;
         z-index: -1;
         content: "";
-        height: 693px;
+        height: 697px;
         position: absolute;
         background-image: url('../images/home-page/overly.png'); 
+
+        @media screen and (max-width: 991px) { 
+            height: 465px;
+        }
     }
 
     .bg-image {
@@ -450,6 +586,10 @@
         position: absolute;
         mix-blend-mode: multiply;
         background-repeat: no-repeat;
+
+        @media screen and (max-width: 991px) { 
+            height: 465px;
+        }
     }
 
     .grid {
@@ -469,22 +609,45 @@
         }
     }
 
-    .button-group {
-        gap: 30px 60px;
-        
-        button {
-            border: 0;
-            padding: 0;
-            color: #A6A6A6;
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 29px;
-            background: transparent;
-            text-transform: capitalize;
+    &__content {
 
-            &:hover, &.active {
-                color: #F7F4F0;
-                text-decoration: underline;
+        @media screen and (max-width: 991px) { 
+            margin-bottom: 60px;
+        }
+
+        .title {
+
+            @media screen and (max-width: 991px) { 
+                margin-bottom: 35px;
+            }
+        }
+
+        .button-group {
+            gap: 30px 60px;
+
+            @media screen and (max-width: 991px) { 
+                gap: 20px 40px;
+            }
+            
+            button {
+                border: 0;
+                padding: 0;
+                color: #A6A6A6;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 29px;
+                background: transparent;
+                text-transform: capitalize;
+
+                @media screen and (max-width: 767px) { 
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+
+                &:hover, &.active {
+                    color: #F7F4F0;
+                    text-decoration: underline;
+                }
             }
         }
     }
