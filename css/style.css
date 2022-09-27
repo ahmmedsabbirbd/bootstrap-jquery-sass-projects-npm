@@ -771,6 +771,51 @@ select, textarea {
   #map .gmnoprint {
     display: none; }
 
+.our-menu {
+  z-index: 1;
+  position: relative; }
+  .our-menu:before {
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    content: "";
+    height: 693px;
+    position: absolute;
+    background-image: url("../images/home-page/overly.png"); }
+  .our-menu .bg-image {
+    top: 0;
+    z-index: 1;
+    z-index: -1;
+    right: -267px;
+    width: 1014px;
+    height: 697px;
+    position: absolute;
+    mix-blend-mode: multiply;
+    background-repeat: no-repeat; }
+  .our-menu .grid {
+    margin-bottom: -40px; }
+    .our-menu .grid-item {
+      margin-bottom: 40px; }
+      .our-menu .grid-item a {
+        display: block; }
+        .our-menu .grid-item a img {
+          width: 100%;
+          height: auto; }
+  .our-menu .button-group {
+    gap: 30px 60px; }
+    .our-menu .button-group button {
+      border: 0;
+      padding: 0;
+      color: #A6A6A6;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 29px;
+      background: transparent;
+      text-transform: capitalize; }
+      .our-menu .button-group button:hover, .our-menu .button-group button.active {
+        color: #F7F4F0;
+        text-decoration: underline; }
+
 .section-heading h2 {
   font-family: Nunito Sans;
   font-weight: 600;
