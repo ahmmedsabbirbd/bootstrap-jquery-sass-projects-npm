@@ -1,6 +1,9 @@
 /** home page **/
-.py-110 {
+.visit-reco {
+    background-color: #2C4325;
+}
 
+.coffee-heaven {
     @media screen and (max-width: 991px) { 
         padding: 80px 0;
     }
@@ -8,13 +11,6 @@
     @media screen and (max-width: 767px) { 
         padding: 60px 0;
     }
-}
-
-.visit-reco {
-    background-color: #2C4325;
-}
-
-.coffee-heaven {
     
     .row {
         
@@ -77,6 +73,10 @@
         .image {
             max-width: 438px;
 
+            @media screen and (max-width: 1199px) { 
+                max-width: 370px;
+            }
+
             &.one {
                 width: 346px;
                 right: -192px;
@@ -85,6 +85,11 @@
                 position: absolute;
                 border: 20px solid #F7F4F0;
                 @include border-radius(500px);
+
+                @media screen and (max-width: 1199px) { 
+                    width: 280px;
+                    height: 280px;
+                }
 
                 -moz-animation: rotating 6s linear infinite;
                 -ms-animation: rotating 6s linear infinite;
@@ -100,10 +105,20 @@
         border: 1px solid #CCCCCC;
         @include border-radius(500px);
 
+        @media screen and (max-width: 1199px) { 
+            width: 210px;
+            height: 210px;
+        }
+
         .number {
             color: $primary;
             font-size: 105px;
             line-height: 77px;
+
+            @media screen and (max-width: 1199px) { 
+                font-size: 72px;
+                line-height: 50px;
+            }
         }
 
         .text {
@@ -129,6 +144,11 @@
         line-height: 431px;
         color: rgba(0, 0, 0, 0.05);
         @include transform(translate(-50%, 0));
+        
+        @media screen  and (max-width: 1199px) {
+            font-size: 320px;
+            line-height: 391px;
+        }
     }
 
     .scrollDown {
@@ -143,6 +163,11 @@
         align-items: center;
         display: inline-flex;
         justify-content: center;
+
+        @media screen  and (max-width: 1199px) { 
+            width: 90px;
+            height: 90px;
+        }
         
         i {
             width: 69.77px;
@@ -152,6 +177,12 @@
             @include border-radius(500px);
             background-color: $dark_black;
             @include transition(all .3s ease);
+
+            @media screen  and (max-width: 1199px) { 
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+            }
             
             img {
                 max-height: 25px;
@@ -191,11 +222,19 @@
 
     &__item {
         margin: 159px -34px 0 0;
+        
+        @media screen  and (max-width: 1199px) { 
+            margin: 149px 0 0 0;
+        }
 
         &.style-1 { 
             margin: 0;
             padding-left: 33px;
             padding-right: 29px; 
+
+            @media screen  and (max-width: 1199px) { 
+                padding: 0 20px 0 0;
+            }
 
             .media {
                 max-width: 305px;
@@ -205,6 +244,10 @@
 
         &.style-2 {
             margin: 303px 0 0 -60px;
+            
+            @media screen  and (max-width: 1199px) { 
+                margin: 293px 0 0 -50px;
+            }
 
             .title {
                 margin-bottom: 0;
@@ -228,12 +271,20 @@
             max-width: 407px;
             margin-bottom: 20px;
         }
+
+        .description {
+            margin-bottom: 30px;
+        }
     }
 
     &__bottom {
         gap: 20px 40px;
         margin-top: -50px;
         max-width: 787.49px;
+
+        @media screen  and (max-width: 1199px) { 
+            max-width: 765px;
+        }
 
         .btn {
             padding-left: 25px;
@@ -365,6 +416,10 @@
 #map {
     width: 100%;
     height: 646px;
+
+    @media screen and (max-width: 1199px) { 
+        height: 620px;
+    }
 
     .gmnoprint {
         display: none;
