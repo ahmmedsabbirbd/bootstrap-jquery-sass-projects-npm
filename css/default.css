@@ -1360,7 +1360,7 @@
 /* Color */
 
 .white {
-	color: #fff;
+	color: #fff !important;
 }
 .black {
 	color: #000000;

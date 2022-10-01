@@ -2,6 +2,13 @@
 
 	jQuery(document).ready(function(){
 
+		/*** AOS */
+		AOS.init({
+			once: true,
+			offset: -300,
+			duration: 900,
+		});
+
 		/*** Sticky header */
 		$(window).scroll(function(){
 			if($("body").scrollTop() > 0 || $("html").scrollTop() > 0) {
@@ -86,13 +93,13 @@
 
         /*** ScrollDown */
         $('.scrollDown').click(function() {
-            var target = $('#primary');
+            var target = $($(this).data('target'));
             var space = $(this).data('space');
 
             if (target.length) {
                 $('html,body').animate({
                 scrollTop: target.offset().top - space
-                }, 1000);
+                }, 500);
             }
         });
     	 

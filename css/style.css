@@ -858,13 +858,18 @@ select, textarea {
       font-size: 300px;
       line-height: 371px; } }
 .banner .scrollDown {
-  border: 0;
   z-index: 1;
   width: 100px;
   height: 100px;
+  cursor: pointer;
   overflow: hidden;
   position: relative;
   background-color: transparent;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   align-items: center;
   display: inline-flex;
   justify-content: center; }
@@ -876,6 +881,7 @@ select, textarea {
     width: 69.77px;
     display: block;
     height: 69.77px;
+    text-align: center;
     line-height: 69.77px;
     -webkit-border-radius: 500px;
     -moz-border-radius: 500px;
