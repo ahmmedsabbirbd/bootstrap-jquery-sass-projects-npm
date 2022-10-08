@@ -1,0 +1,48 @@
+a, .button,button {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.btn { 
+    color: $white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    font-family: $ral;
+    border: 0 !important;
+    padding: 13px 36px;
+    letter-spacing: 0.01rem;
+    background-color: $black;
+    text-transform: capitalize;
+    @include border-radius(4px);
+    @include transition(all .3s ease);
+
+    @media screen and (max-width: 991px) {
+        padding: 10px 20px !important;
+    }
+
+    &-border {
+        color: $black;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        padding: 19px 39px;
+        letter-spacing: 0.02rem;
+        @include border-radius(0);
+        background-color: transparent;
+        border: 2px solid $black !important;
+    }
+
+    &-sm {
+        padding: 13px 37.5px;
+    }
+    
+    &:hover, &:focus {
+        box-shadow: none;
+        color: $white !important;
+        background-color: $black !important;
+    }
+}

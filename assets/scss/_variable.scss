@@ -1,0 +1,15 @@
+/*** COLOR */
+$white:#FFF;
+$black:#000; 
+$dark_black:#646464; 
+$primary:#C09679; 
+
+/*** FONT SIZE */
+$ral: 'Raleway', sans-serif;
+$pop: 'Poppins', sans-serif;
+
+/* Custom Class */
+.color-white { color: #fff !important; }
+.color-black { color: #000 !important; }
+.font-pop { font-family: $pop !important; }
+.fw-500 { font-weight: 500 !important; }

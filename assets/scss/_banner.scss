@@ -1,0 +1,153 @@
+/** banner  **/
+.banner-area {
+    background-color: $primary;
+    background-repeat: no-repeat;
+    background-position: 51% 32%;
+
+    &__content {
+        max-width: 444px;
+        
+        @media screen  and (max-width: 991px) { 
+            max-width: 285px;
+        }
+
+        .description {
+                
+            p {
+                color: #E2E2E2;
+                letter-spacing: normal;
+            }
+        }
+    }
+
+    &__bottom {
+        margin-bottom: -148px;
+
+        @media screen  and (max-width: 1199px) { 
+            margin-bottom: -129px;
+        }
+
+        @media screen  and (max-width: 767px) { 
+            margin-bottom: -120px;
+        }
+        
+
+        .title {
+            font-size: 180px;
+            line-height: 160px;
+
+            @media screen  and (max-width: 1199px) { 
+                font-size: 169px;
+                line-height: 115px;
+            }
+
+            @media screen  and (max-width: 991px) { 
+                font-size: 130px;
+                line-height: 85px;
+            }
+
+            @media screen  and (max-width: 767px) { 
+                font-size: 95px;
+                line-height: 40px;
+            }
+
+            @media screen  and (max-width: 575px) { 
+                font-size: 71px;
+                line-height: 18px;
+            }
+
+            @media screen  and (max-width: 480px) { 
+                font-size: 50px;
+                line-height: 16px;
+            }
+        }
+
+        .scrollDown {
+            z-index: 1;
+            width: 126px;
+            height: 126px;  
+            cursor: pointer;
+            font-size: 35px;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            line-height: 126px;
+            border: 6px solid $white;
+            background-color: #F2F4F3; 
+            @include border-radius(500px);
+            @include transition(all .3s ease);
+    
+            align-items: center;
+            display: inline-flex;
+            justify-content: center;
+    
+            @media screen  and (max-width: 1199px) { 
+                width: 90px;
+                height: 90px;
+                font-size: 30px;
+                line-height: 90px;
+            }
+    
+            @media screen  and (max-width: 767px) { 
+                width: 70px;
+                height: 70px;
+                font-size: 25px;
+                line-height: 70px;
+                border-width: 4px;
+            }
+            
+            i { 
+                display: block; 
+                @include transition(all .3s ease);
+                
+                img {
+                    max-height: 35px;
+    
+                    @media screen  and (max-width: 1199px) { 
+                        max-height: 30px;
+                    }
+    
+                    @media screen  and (max-width: 767px) { 
+                        max-height: 25px;
+                    }
+                }
+            }
+    
+            
+            &:hover {
+                background-color: $white;
+            }
+        }
+    }
+
+    &-reward {
+        
+        @media screen  and (min-width: 576px) { 
+            max-width: 162px;
+            margin-left: auto;
+        }    
+
+        .item {
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .number {
+                font-size: 40px;
+                line-height: 30px;
+                letter-spacing: 0.02rem;
+
+                @media screen  and (max-width: 767px) { 
+                    font-size: 30px;
+                    line-height: 20px;
+                }
+            }
+            
+            .title {
+                letter-spacing: 0.02rem;
+                color: rgba(255, 255, 255, 0.5);;
+            }
+        }
+    }
+}
