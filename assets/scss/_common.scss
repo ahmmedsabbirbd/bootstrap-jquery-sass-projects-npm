@@ -1,7 +1,7 @@
 /*** 1. Theme default css */
 body {
     color: $dark_black;
-    background: #F7F4F0;
+    background: $white;
     font: 400 16px/24px $ral;
 }
 
@@ -81,6 +81,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
 }
+
+.row {
+	margin-left: -15px;
+	margin-right: -15px;
+
+	>[class*="col"] {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+} 
 
 input[type="text"]:not(.select2-input),
 input[type="number"],

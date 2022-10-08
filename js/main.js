@@ -77,6 +77,19 @@
 			$(".offcanvas-overlay").toggleClass("overlay-open");
 		});
 
+		/*** ScrollDown */
+        $('.scrollDown').click(function() {
+            var target = $($(this).data('target'));
+            var space = $(this).data('space');
+
+            if (target.length) {
+                $('html,body').animate({
+                scrollTop: target.offset().top - space
+                }, 500);
+            }
+        });
+    	 
+
 		$(window).scroll(function(){
 			if($("body").scrollTop() > 0 || $("html").scrollTop() > 0) {
 				$(".side-info").removeClass("info-open");
