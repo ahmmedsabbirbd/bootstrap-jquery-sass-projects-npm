@@ -58,7 +58,7 @@
 		/*** AOS */
 		AOS.init({
 			once: true,
-			offset: -300,
+			offset: 10,
 			duration: 900,
 		});
 		
