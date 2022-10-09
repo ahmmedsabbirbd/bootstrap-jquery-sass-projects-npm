@@ -1,0 +1,54 @@
+a, .button,button {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.btn { 
+    z-index: 1;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    overflow: hidden;
+    color: $dark_black;
+    font-family: $pop;
+    border: 0 !important;
+    padding: 13px 36px;
+    position: relative;
+    text-transform: capitalize;
+    @include border-radius(4px);
+    background-color: $secondary;
+    @include transition(all .3s ease);    
+    
+    @media screen and (max-width: 991px) {
+        padding: 10px 20px;
+    }
+
+    @media screen and (max-width: 480px) {
+        padding: 10px 20px;
+    }
+    
+    &:after {
+        left: 0;
+        top: 0;
+        height: 0;
+        width: 100%;
+        z-index: -1;
+        content: "";
+        position: absolute;
+        background-color: $primary;
+        @include transition(all .3s ease);    
+    }
+    
+    &:hover, &:focus {
+        box-shadow: none;
+        color: $white !important;
+
+        &:after {
+            top: 0;
+            height: 100%;
+        }
+    }
+}

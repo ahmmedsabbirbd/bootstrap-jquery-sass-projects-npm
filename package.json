@@ -1,0 +1,22 @@
+{
+  "name": "stoka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch assets/scss/main.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmmedsabbirbd/stoka.git"
+  },
+  "author": "spellon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmmedsabbirbd/stoka/issues"
+  },
+  "homepage": "https://github.com/ahmmedsabbirbd/stoka#readme",
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

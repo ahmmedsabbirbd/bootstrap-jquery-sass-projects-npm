@@ -1,0 +1,129 @@
+/*** 1. Theme default css */
+body {
+    color: #EAEDE8;
+    background: $white;
+    font: 400 16px/24px $ral;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    transition: all 0.3s ease-out 0s;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+
+    li {
+        list-style: none
+    }
+}
+
+p {
+    margin-bottom: 0;
+}
+
+h1, .h1 { font-size: 80px; line-height: 90px;
+    @media screen  and (max-width: 1199px) { font-size: 64px; line-height: 74px; }
+    @media screen  and (max-width: 991px) { font-size: 50px; line-height: 60px; }
+    @media screen  and (max-width: 767px) { font-size: 42px; line-height: 52px; }
+    @media screen  and (max-width: 575px) { font-size: 36px; line-height: 46px; }
+}
+h2, .h2 { font-size: 50px; line-height: 60px;
+    @media screen  and (max-width: 991px) { font-size: 42px; line-height: 52px; }
+    @media screen  and (max-width: 767px) { font-size: 36px; line-height: 46px; }
+    @media screen  and (max-width: 575px) { font-size: 30px; line-height: 40px; }
+}
+h3, .h3 { font-size: 48px; line-height: 58px; 
+    @media screen  and (max-width: 991px) { font-size: 36px; line-height: 46px; }
+    @media screen  and (max-width: 767px) { font-size: 30px; line-height: 40px; }
+    @media screen  and (max-width: 575px) { font-size: 28px; line-height: 38px; }
+}
+h4, .h4 { font-size: 42px; line-height: 52px; 
+    @media screen  and (max-width: 1199px) { font-size: 36px; line-height: 46px; }
+    @media screen  and (max-width: 991px) { font-size: 30px; line-height: 40px; }
+    @media screen  and (max-width: 767px) { font-size: 25px; line-height: 35px; }
+}
+h5, .h5 { font-size: 28px; line-height: 38px;  
+    @media screen  and (max-width: 991px) { font-size: 26px; line-height: 36px; }
+}
+h6, .h6 { font-size: 24px; line-height: 34px; 
+    &.fz-sm { font-size: 20px; line-height: 30px;  }
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin: 0;
+    padding: 0;
+    color: $black;
+    font-weight: 700;
+    font-family: $pop;
+
+    a {
+        color: inherit;
+        text-decoration: underline;
+    }  
+}
+
+.container {
+	width: 100%;
+	max-width: 1194px;
+    padding-left: 20px;
+    padding-right: 20px;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+.container-fluid {
+	max-width: 1500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    @media screen  and (min-width: 576px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.row {
+	margin-left: -15px;
+	margin-right: -15px;
+
+	>[class*="col"] {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+} 
+
+input[type="text"]:not(.select2-input),
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="password"],
+input[type="file"],
+select, textarea {
+    
+    @include appearance;
+	border: 0 !important;
+	width: 100% !important;
+	color: #888888 !important;
+    font-size: 14px !important; 
+    font-weight: 600 !important;
+	box-shadow: none !important;
+    line-height: 19px !important; 
+	background: $white !important;
+	padding: 16.5px 26px !important;
+	@include transition(all 0.3s ease);
+	-webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    @include border-radius(5px);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    @include border-radius(4px !important);
+    box-shadow: 0px 20px 70px rgba(0, 0, 0, 0.06) !important;
+    @include placeholderWithlettertraking(#888888, 14px, 26px, 0, 400);
+	&:hover, &:focus {
+		outline: 0;
+	}
+}

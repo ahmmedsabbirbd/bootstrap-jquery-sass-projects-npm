@@ -1,0 +1,19 @@
+/*** COLOR */
+$white:#FFF;
+$black:#000; 
+$dark_black:#525652; 
+$dark_white:#EEF2EE; 
+$primary:#518154; 
+$secondary:#F9E25E; 
+
+/*** FONT SIZE */
+$ral: 'Raleway', sans-serif;
+$pop: 'Poppins', sans-serif;
+$robo: 'Roboto Mono', monospace;;
+
+/* Custom Class */
+.color-white { color: #fff !important; }
+.color-black { color: #000 !important; }
+.font-pop { font-family: $pop !important; } 
+.font-ral { font-family: $ral !important; } 
+.font-robo { font-family: $robo !important; } 

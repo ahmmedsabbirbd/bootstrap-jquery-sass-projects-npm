@@ -1,0 +1,61 @@
+.cta__wrapper {
+    z-index: 1;
+    position: relative;
+    background-color: #F6F6F6;
+    @include border-radius(20px);
+
+    &:after {
+        content: "";
+        left: -171px;
+        z-index: -1;
+        bottom: -148px;
+        width: 738.83px;
+        height: 436.12px;
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../images/cta/cta-overly-1.png);
+        animation: 2s ease-in-out 0s infinite running floating-up; 
+    }
+
+    &:before {
+        content: ""; 
+        z-index: -1;
+        right: -339px;
+        bottom: 198px;
+        width: 785.21px;
+        height: 1005.13px;
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../images/cta/cta-overly-2.png);
+        animation: 3s ease-in-out 0s infinite running floating-up;
+    }
+    
+    
+    .text { 
+        max-width: 950px;
+
+
+        p {
+            font-size: 20px; 
+            max-width: 820px;
+            line-height: 27px;
+            margin-left: auto;
+            margin-right: auto;
+            letter-spacing: 0.02em;
+        }
+    }
+
+    .form {
+
+
+        &-group {
+            gap: 20px;
+            
+            input[type="email"] {
+                max-width: 361px;
+            }
+        }
+    }
+}

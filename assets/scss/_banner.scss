@@ -1,0 +1,36 @@
+.banner-area { 
+    background-size: cover;
+    background-color: $primary;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &__content {
+        max-width: 505px;
+        
+        @media screen  and (max-width: 1199px) { 
+            max-width: 395px;
+        }
+
+        @media screen  and (max-width: 991px) { 
+            max-width: 310px;
+        }
+
+        @media screen  and (max-width: 767px) { 
+            max-width: 267px;
+        }
+
+        @media screen  and (max-width: 575px) { 
+            max-width: 229px;
+        }
+
+        .description {
+                
+            p {
+
+                + p {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+/***
+  Theme Name: Stoka | Website HTML5 Template.
+  Author: https://web.facebook.com/ahmmedsabbirbd
+  Author Url: https://sabbir-me.netlify.app
+  Description: Stoka Website HTML5 Template.
+  Version: 1.0
+*/
+
+/*** CSS Index
+-----------------------------------
+1. Variable - All Variable
+2. Mixin - Browser Support
+3. Common - Global Style
+4. Button - Button Global Style
+5. Header - Header Style
+6. Banner - Banner Style
+6. Footer - Footer Style
+*/
+@import 'variable'; 
+@import 'mixin';
+@import 'common';
+@import 'button';
+@import 'header';
+@import 'banner';
+@import 'footer';
