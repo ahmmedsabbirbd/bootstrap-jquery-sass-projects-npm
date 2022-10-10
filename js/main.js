@@ -244,7 +244,7 @@
                 trigger: ".banner-area__gsap",
                 start: "center center",
                 end: "bottom top",
-                markers: true,
+                // markers: true,
                 scrub: 3,
                 pin: true
             }
@@ -286,7 +286,7 @@
                 trigger: ".video-area__gsap",
                 start: "center center",
                 end: "bottom top",
-                markers: true,
+                // markers: true,
                 scrub: 3,
                 pin: true
             }
@@ -300,7 +300,7 @@
                 trigger: ".cta__gsap",
                 start: "center center",
                 end: "bottom top",
-                markers: true,
+                // markers: true,
                 scrub: 3,
                 pin: true
             }
