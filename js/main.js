@@ -222,96 +222,96 @@
 
 		/*** gsap */
 
-		// /*** banner-area__gsap */
-		// gsap.timeline({
-        //     scrollTrigger: {
-        //         trigger: ".banner-area__gsap",
-        //         start: "center center",
-        //         end: "bottom top",
-        //         // markers: true,
-        //         scrub: true,
-        //         pin: true
-        //     }
-        // })
-		// .from(".banner-area__gsap .banner-area__content .title ", { x : innerWidth * -1 } )
-		// .from(".banner-area__gsap .banner-area-reward", { x : innerWidth * 1 } )
-		// .from(".banner-area__gsap .banner-area__bottom .title ", {  y : innerWidth * 1 } )
-		// .from(".banner-area__gsap .banner-area__bottom .scrollDown-wrapper", {  scale: 0 } )
+		/*** banner-area__gsap */
+		gsap.timeline({
+            scrollTrigger: {
+                trigger: ".greensock .banner-area__gsap",
+                start: "center center",
+                end: "bottom top",
+                // markers: true,
+                scrub: true,
+                pin: true
+            }
+        })
+		.from(".banner-area__gsap .banner-area__content .title ", { x : innerWidth * -1 } )
+		.from(".banner-area__gsap .banner-area-reward", { x : innerWidth * 1 } )
+		.from(".banner-area__gsap .banner-area__bottom .title ", {  y : innerWidth * 1 } )
+		.from(".banner-area__gsap .banner-area__bottom .scrollDown-wrapper", {  scale: 0 } )
 		
-		// /*** product-area__gsap */
-		// gsap.timeline({
-        //     scrollTrigger: {
-        //         trigger: ".product-area__gsap",
-        //         start: "center center",
-        //         end: "bottom top",
-        //         // markers: true,
-        //         scrub: true,
-        //         pin: true
-        //     }
-        // })
-        // .from(".product-area__gsap .title", { x : innerWidth * 1 } )
-        // .from(".product-area__gsap .description", { x : innerWidth * 1 } )
-        // .from(".product-area__gsap .btn-wrapper", { x : innerWidth * 1 } )
-        // .from(".product-area__gsap .product-area__media", { x : innerWidth * -1 } );
+		/*** product-area__gsap */
+		gsap.timeline({
+            scrollTrigger: {
+                trigger: ".greensock .product-area__gsap",
+                start: "center center",
+                end: "bottom top",
+                // markers: true,
+                scrub: true,
+                pin: true
+            }
+        })
+        .from(".product-area__gsap .title", { x : innerWidth * 1 } )
+        .from(".product-area__gsap .description", { x : innerWidth * 1 } )
+        .from(".product-area__gsap .btn-wrapper", { x : innerWidth * 1 } )
+        .from(".product-area__gsap .product-area__media", { x : innerWidth * -1 } );
 
-		// /*** product-area__gsap1 */
-		// gsap.timeline({
-        //     scrollTrigger: {
-        //         trigger: ".product-area__gsap1",
-        //         start: "center center",
-        //         end: "bottom top",
-        //         // markers: true,
-        //         scrub: true,
-        //         pin: true
-        //     }
-        // })
-        // .from(".product-area__gsap1 .title", { x : innerWidth * -1 } )
-        // .from(".product-area__gsap1 .description", { x : innerWidth * -1 } )
-        // .from(".product-area__gsap1 .btn-wrapper", { x : innerWidth * -1 } )
-        // .from(".product-area__gsap1 .product-area__media", { x : innerWidth * 1 } )
+		/*** product-area__gsap1 */
+		gsap.timeline({
+            scrollTrigger: {
+                trigger: ".greensock .product-area__gsap1",
+                start: "center center",
+                end: "bottom top",
+                // markers: true,
+                scrub: true,
+                pin: true
+            }
+        })
+        .from(".product-area__gsap1 .title", { x : innerWidth * -1 } )
+        .from(".product-area__gsap1 .description", { x : innerWidth * -1 } )
+        .from(".product-area__gsap1 .btn-wrapper", { x : innerWidth * -1 } )
+        .from(".product-area__gsap1 .product-area__media", { x : innerWidth * 1 } )
 
-		// /*** popular-product__gsap */
-		// gsap.timeline({
-        //     scrollTrigger: {
-        //         trigger: ".popular-product__gsap",
-        //         start: "center center",
-        //         end: "bottom top",
-        //         // markers: true,
-        //         scrub: true,
-        //         pin: true
-        //     }
-        // })
-		// .from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(1)", { x : innerWidth * -1 } )
-		// .from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(2)", { y : innerWidth * 1 } )
-		// .from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(3)", { x : innerWidth * 1 } )
-		// .from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(4)", { x : innerWidth * -1 } )
-		// .from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(5)", { y : innerWidth * 1 } )
-		// .from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(6)", { x : innerWidth * 1 } )
-		// .from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(7)", { x : innerWidth * -1 } )
-		// .from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(8)", { y : innerWidth * 1 } )
-		// .from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(9)", { x : innerWidth * 1 } )
-		// .from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(10)", { x : innerWidth * -1 } )
-		// .from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(11)", { y : innerWidth * 1 } )
-		// .from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(12)", { x : innerWidth * 1 } )
-		// .from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(13)", { x : innerWidth * -1 } )
-		// .from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(14)", { y : innerWidth * 1 } )
-		// .from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(15)", { x : innerWidth * 1 } )
+		/*** popular-product__gsap */
+		gsap.timeline({
+            scrollTrigger: {
+                trigger: ".greensock .popular-product__gsap",
+                start: "center center",
+                end: "bottom top",
+                // markers: true,
+                scrub: true,
+                pin: true
+            }
+        })
+		.from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(1)", { x : innerWidth * -1 } )
+		.from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(2)", { y : innerWidth * 1 } )
+		.from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(3)", { x : innerWidth * 1 } )
+		.from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(4)", { x : innerWidth * -1 } )
+		.from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(5)", { y : innerWidth * 1 } )
+		.from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(6)", { x : innerWidth * 1 } )
+		.from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(7)", { x : innerWidth * -1 } )
+		.from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(8)", { y : innerWidth * 1 } )
+		.from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(9)", { x : innerWidth * 1 } )
+		.from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(10)", { x : innerWidth * -1 } )
+		.from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(11)", { y : innerWidth * 1 } )
+		.from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(12)", { x : innerWidth * 1 } )
+		.from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(13)", { x : innerWidth * -1 } )
+		.from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(14)", { y : innerWidth * 1 } )
+		.from(".popular-product__gsap .col-lg-4.col-sm-6:nth-child(15)", { x : innerWidth * 1 } )
 
-		// /*** cta__gsap */
-		// gsap.timeline({
-        //     scrollTrigger: {
-        //         trigger: ".cta__gsap",
-        //         start: "center center",
-        //         end: "bottom top",
-        //         // markers: true,
-        //         scrub: true,
-        //         pin: true
-        //     }
-        // })
-        // .from(".cta__gsap .cta__wrapper", {  opacity: 0 } ) 
-		// .from(".cta__gsap .title", { y : innerWidth * 1 } )
-        // .from(".cta__gsap .description", { x : innerWidth * -1 } )
-        // .from(".cta__gsap .form ", { x : innerWidth * 1 } )
+		/*** cta__gsap */
+		gsap.timeline({
+            scrollTrigger: {
+                trigger: ".greensock .cta__gsap",
+                start: "center center",
+                end: "bottom top",
+                // markers: true,
+                scrub: true,
+                pin: true
+            }
+        })
+        .from(".cta__gsap .cta__wrapper", {  opacity: 0 } ) 
+		.from(".cta__gsap .title", { y : innerWidth * 1 } )
+        .from(".cta__gsap .description", { x : innerWidth * -1 } )
+        .from(".cta__gsap .form ", { x : innerWidth * 1 } )
 		 
 	});
 

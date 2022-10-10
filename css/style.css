@@ -928,15 +928,15 @@ a, .button, button {
     .cta__wrapper .form-group input[type="email"] {
       max-width: 361px; }
 
-.product-area .row:last-child {
+.product-area .item:last-child {
   margin-bottom: 0; }
-.product-area .style-2 {
+.product-area .style-2 .row {
   flex-direction: row-reverse; }
-  .product-area .style-2 .product-area__content {
+  .product-area .style-2 .row .product-area__content {
     padding-left: 0;
     padding-right: 65px; }
     @media screen and (max-width: 991px) {
-      .product-area .style-2 .product-area__content {
+      .product-area .style-2 .row .product-area__content {
         padding-right: 40px; } }
 @media screen and (max-width: 767px) {
   .product-area .product-area__content {
