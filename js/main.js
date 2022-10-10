@@ -148,7 +148,7 @@
 		.from(".banner-area__gsap .banner-area__content .title ", { x : innerWidth * -1 } )
 		.from(".banner-area__gsap .banner-area-reward", { x : innerWidth * 1 } )
 		.from(".banner-area__gsap .banner-area__bottom .title ", {  y : innerWidth * 1 } )
-		.from(".banner-area__gsap .banner-area__bottom .scrollDown-wrapper", {  y : innerWidth * 1 } )
+		.from(".banner-area__gsap .banner-area__bottom .scrollDown-wrapper", {  scale: 0 } )
 		
 		/*** product-area__gsap */
 		gsap.timeline({
