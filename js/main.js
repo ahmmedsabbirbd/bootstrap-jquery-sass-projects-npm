@@ -225,7 +225,7 @@
 		/*** banner-area__gsap */
 		gsap.timeline({
             scrollTrigger: {
-                trigger: ".greensock .banner-area__gsap",
+                trigger: ".banner-area__gsap",
                 start: "center center",
                 end: "bottom top",
                 // markers: true,
@@ -241,7 +241,7 @@
 		/*** product-area__gsap */
 		gsap.timeline({
             scrollTrigger: {
-                trigger: ".greensock .product-area__gsap",
+                trigger: ".product-area__gsap",
                 start: "center center",
                 end: "bottom top",
                 // markers: true,
@@ -257,7 +257,7 @@
 		/*** product-area__gsap1 */
 		gsap.timeline({
             scrollTrigger: {
-                trigger: ".greensock .product-area__gsap1",
+                trigger: ".product-area__gsap1",
                 start: "center center",
                 end: "bottom top",
                 // markers: true,
@@ -273,7 +273,7 @@
 		/*** popular-product__gsap */
 		gsap.timeline({
             scrollTrigger: {
-                trigger: ".greensock .popular-product__gsap",
+                trigger: ".popular-product__gsap",
                 start: "center center",
                 end: "bottom top",
                 // markers: true,
@@ -300,7 +300,7 @@
 		/*** cta__gsap */
 		gsap.timeline({
             scrollTrigger: {
-                trigger: ".greensock .cta__gsap",
+                trigger: ".cta__gsap",
                 start: "center center",
                 end: "bottom top",
                 // markers: true,
@@ -313,6 +313,22 @@
         .from(".cta__gsap .description", { x : innerWidth * -1 } )
         .from(".cta__gsap .form ", { x : innerWidth * 1 } )
 		 
+		// /*** our-categories__gsap */
+		// gsap.timeline({
+        //     scrollTrigger: {
+        //         trigger: ".our-categories__gsap",
+        //         start: "center center",
+        //         end: "bottom top",
+        //         // markers: true,
+        //         scrub: true,
+        //         pin: true
+        //     }
+        // })
+        // .from(".our-categories__gsap .title", { x : innerWidth * -1 } )
+        // .from(".our-categories__gsap .description", { x : innerWidth * -1 } )
+        // .from(".our-categories__gsap .btn-wrapper", { x : innerWidth * 1 } )
+        // .from(".our-categories__gsap .categories-slider", { y : innerWidth * 1 } )
+		
 	});
 
 }(jQuery));
