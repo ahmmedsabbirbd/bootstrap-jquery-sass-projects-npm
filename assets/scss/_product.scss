@@ -1,0 +1,45 @@
+.product-area {
+    
+    .item {
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .style-2 {
+        
+        .row {
+            flex-direction: row-reverse;
+            
+            .product-area__content {
+                padding-left: 0;
+                padding-right: 65px;
+                
+                @media screen and (max-width: 991px) { 
+                    padding-right: 40px;
+                }
+            }
+        }
+    }
+
+    .product-area__content {
+
+        @media screen and (max-width: 767px) { 
+            padding: 0 !important;
+        }
+
+        .description {
+    
+            p {
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: 0.02rem;
+
+                + p {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

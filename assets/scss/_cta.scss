@@ -1,0 +1,46 @@
+.cta {
+    background-color: #ECECEC;
+
+    &__gsap {
+        height: 100%;
+    }
+
+    &__content {
+        max-width: 490px;
+    
+        .form {
+    
+            @media screen  and (max-width: 767px) { 
+                width: 100%;
+            }
+    
+            &-group {
+                width: 381px;
+                max-width: 100%;
+                position: relative;
+    
+                @media screen  and (max-width: 900px) { 
+                    width: 311px;
+                }
+    
+                @media screen  and (max-width: 767px) { 
+                    width: 100%;
+                }
+    
+                input[type="email"] {
+                    padding-right: 145px !important;
+    
+                    @media screen  and (max-width: 991px) { 
+                        padding-right: 130px !important;
+                    }
+                }
+    
+                input[type="submit"], .btn {
+                    right: 6px;
+                    position: absolute;
+                    top: calc(50% - 25px);
+                }
+            }
+        }
+    }
+}

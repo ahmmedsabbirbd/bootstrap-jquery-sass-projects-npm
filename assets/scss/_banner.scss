@@ -1,0 +1,29 @@
+/** banner  **/
+.banner-area {
+    z-index: 1;
+    top: 0 !important;
+    position: relative;
+    background-color: #030303;
+
+    &__content { 
+        
+
+        .description {
+                
+            
+        }
+    }
+
+    &__media {
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        position: absolute;
+    }
+
+    .starting-from {
+        padding: 18px 46px;
+        backdrop-filter: blur(8px);
+        background: linear-gradient(99.44deg, rgba(249, 141, 142, 0.7) -26.9%, rgba(136, 247, 255, 0.5) 97.75%);
+    }
+}
