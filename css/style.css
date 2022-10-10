@@ -380,6 +380,9 @@ a, .button, button {
     -moz-transform: translate3d(0, 0, 0);
     background-color: transparent;
     border: 2px solid #000 !important; }
+  .btn-md {
+    padding: 16px 38px;
+    letter-spacing: 0.04em; }
   .btn-sm {
     padding: 13px 37.5px; }
   .btn:hover, .btn:focus {
@@ -944,6 +947,70 @@ a, .button, button {
   letter-spacing: 0.02rem; }
   .product-area .product-area__content .description p + p {
     margin-top: 10px; }
+
+.our-categories__content {
+  max-width: 440px; }
+  .our-categories__content .description p {
+    color: #23272A;
+    letter-spacing: 0.04em; }
+.our-categories__item {
+  height: 400px;
+  display: block;
+  max-width: 487px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0); }
+  @media screen and (max-width: 991px) {
+    .our-categories__item {
+      height: 380px; } }
+  @media screen and (max-width: 767px) {
+    .our-categories__item {
+      height: 350px; } }
+  @media screen and (max-width: 480px) {
+    .our-categories__item {
+      height: 300px; } }
+  @media screen and (max-width: 320px) {
+    .our-categories__item {
+      height: 250px; } }
+  .our-categories__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+.our-categories .categories-slider {
+  margin-right: calc(-100vw / 2 + 100% / 2) !important; }
+  .our-categories .categories-slider .slick-list .slick-track .slick-slide {
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left !important; }
+    @media screen and (max-width: 767px) {
+      .our-categories .categories-slider .slick-list .slick-track .slick-slide {
+        padding-left: 15px;
+        padding-right: 15px; } }
+
+/*** Popup CSS */
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1; }
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8; }
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0; }
 
 .popular-product {
   background-color: rgba(246, 246, 246, 0.8); }
