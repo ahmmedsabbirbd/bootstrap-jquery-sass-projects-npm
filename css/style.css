@@ -625,10 +625,10 @@ a, .button, button {
 
 /** banner  **/
 .banner-area {
-  z-index: 1;
-  top: 0 !important;
-  position: relative;
   background-color: #030303; }
+  .banner-area__gsap {
+    height: 100vh;
+    top: 0 !important; }
   .banner-area__media {
     right: 0;
     bottom: 0;

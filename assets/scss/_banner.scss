@@ -1,9 +1,11 @@
 /** banner  **/
-.banner-area {
-    z-index: 1;
-    top: 0 !important;
-    position: relative;
+.banner-area {  
     background-color: #030303;
+
+    &__gsap {
+        height: 100vh;
+        top: 0 !important;
+    }
 
     &__content { 
         
